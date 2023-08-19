@@ -1,0 +1,52 @@
+State,Online,In-Person
+Alabama,NO,NO
+Alaska,NO,NO
+Arizona,YES,YES
+Arkansas,YES,YES
+California,NO,NO
+Colorado,YES,YES
+Connecticut,YES,YES
+Delaware,NO,YES
+Florida,NO,NO
+Georgia,NO,NO
+Hawaii,NO,NO
+Idaho,NO,NO
+Illinois,YES,YES
+Indiana,YES,YES
+Iowa,YES,YES
+Kansas,YES,YES
+Kentucky,Pending,Pending
+Louisiana,YES,YES
+Maine,Pending,Pending
+Maryland,YES,YES
+Massachusetts,YES,YES
+Michigan,YES,YES
+Minnesota,NO,NO
+Mississippi,NO,YES
+Missouri,NO,NO
+Montana,NO,YES
+Nebraska,NO,Pending
+Nevada,YES,YES
+New Hampshire,YES,YES
+New Jersey,YES,YES
+New Mexico,NO,YES
+New York,YES,YES
+North Carolina,NO,YES
+North Dakota,NO,YES
+Ohio,YES,YES
+Oklahoma,NO,NO
+Oregon,YES,YES
+Pennsylvania,YES,YES
+Rhode Island,YES,YES
+South Carolina,NO,NO
+South Dakota,NO,YES
+Tennessee,YES,NO
+Texas,NO,NO
+Utah,NO,NO
+Vermont,Pending,NO
+Virginia,YES,YES
+Washington,NO,YES
+DC,YES,YES
+West Virginia,YES,YES
+Wisconsin,NO,YES
+Wyoming,YES,NO
