@@ -1,4 +1,4 @@
-market,handle,revenue,hold,taxes
+state,handle,revenue,hold,taxes
 New Jersey,"$39,461,272,422","$2,871,419,711",7.3%,"$397,552,569"
 Nevada,"$33,520,083,578","$1,885,621,000",5.6%,"$127,279,418"
 New York,"$25,545,018,522","$2,231,885,589",8.7%,"$1,116,577,865"
@@ -28,8 +28,8 @@ Arkansas,"$486,217,898","$49,119,871",10.1%,"$7,134,908"
 Wyoming,"$260,463,927","$26,680,404",10.2%,"$1,436,139"
 Montana,"$149,796,135","$20,555,840",13.7%,"$3,345,736"
 South Dakota,"$13,834,301","$1,704,952",12.3%,"$153,446"
-Wisconsin,?,?,,?
-North Dakota,?,?,,?
-New Mexico,?,?,,?
-Washington,?,?,,?
-North Carolina,?,?,,?
+Wisconsin,0,0,,0
+North Dakota,0,0,,0
+New Mexico,0,0,,0
+Washington,0,0,,0
+North Carolina,0,0,,0
