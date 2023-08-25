@@ -1,6 +1,6 @@
-Team,Venue,City,state,League,lat,lon
+ï»¿Team,Venue,City,state,League,lat,lon
 Arizona Diamondbacks,Chase Field,Phoenix,Arizona,MLB,33.4453,-112.0669
-Phoenix Suns,Footprint Center,Phoenix,Arizona,NBA,ÿ33.4459,-112.0715
+Phoenix Suns,Footprint Center,Phoenix,Arizona,NBA,Â 33.4459,-112.0715
 Arizona Coyotes,Mullett Arena,Tempe,Arizona,NHL,33.4267,-111.9286
 Arizona Cardinals,State Farm Stadium,Glendale,Arizona,NFL,33.5277,-112.2626
 Los Angeles Angels,Angel Stadium,Anaheim,California,MLB,33.8003,-117.8828
@@ -51,8 +51,8 @@ Baltimore Ravens,M&T Bank Stadium,Baltimore,Maryland,NFL,39.2780,-76.6228
 Baltimore Orioles,Oriole Park at Camden Yards,Baltimore,Maryland,MLB,39.2839,-76.6217
 Boston Red Sox,Fenway Park,Boston,Massachusetts,MLB,42.3464,-71.0975
 New England Patriots,Gillette Stadium,Foxborough,Massachusetts,NFL,42.0909,-71.2643
-Boston Bruins,TD Garden,Boston,Massachusetts,NHL,42.3663,ÿ-71.0626
-Boston Celtics,TD Garden,Boston,Massachusetts,NBA,42.3663,ÿ-71.0626
+Boston Bruins,TD Garden,Boston,Massachusetts,NHL,42.3663,Â -71.0626
+Boston Celtics,TD Garden,Boston,Massachusetts,NBA,42.3663,Â -71.0626
 Detroit Tigers,Comerica Park,Detroit,Michigan,MLB,42.3392,-83.0486
 Detroit Lions,Ford Field,Detroit,Michigan,NFL,42.3400,-83.0456
 Detroit Red Wings,Little Caesars Arena,Detroit,Michigan,NHL,42.3411,-83.0553
@@ -60,13 +60,13 @@ Detroit Pistons,Little Caesars Arena,Detroit,Michigan,NBA,42.3411,-83.0553
 Minnesota Timberwolves,Target Center,Minneapolis,Minnesota,NBA,44.9796,-93.2766
 Minnesota Twins,Target Field,Minneapolis,Minnesota,MLB,44.9817,-93.2783
 Minnesota Vikings,U.S. Bank Stadium,Minneapolis,Minnesota,NFL,44.9739,-93.2581
-Minnesota Wild,Xcel Energy Center,St. Paul,Minnesota,NHL,44.9402,ÿ-93.1007
+Minnesota Wild,Xcel Energy Center,St. Paul,Minnesota,NHL,44.9402,Â -93.1007
 Kansas City Chiefs,Arrowhead Stadium,Kansas City,Missouri,NFL,39.0489,-94.4839
 St. Louis Cardinals,Busch Stadium,St. Louis,Missouri,MLB,38.6225,-90.1931
 St. Louis Blues,Enterprise Center,St. Louis,Missouri,NHL,38.6270,-90.2032
 Kansas City Royals,Kauffman Stadium,Kansas City,Missouri,MLB,39.0514,-94.4806
 Las Vegas Raiders,Allegiant Stadium,Paradise,Nevada,NFL,36.0906,-115.1839
-Vegas Golden Knights,T-Mobile Arena,Paradise,Nevada,NHL,36.1030,ÿ-115.1787
+Vegas Golden Knights,T-Mobile Arena,Paradise,Nevada,NHL,36.1030,Â -115.1787
 New York Giants,MetLife Stadium,East Rutherford,New Jersey,NFL,40.8122,-74.0770
 New York Jets,MetLife Stadium,East Rutherford,New Jersey,NFL,40.8122,-74.0770
 New Jersey Devils,Prudential Center,Newark,New Jersey,NHL,40.7335,-74.1693
@@ -86,7 +86,7 @@ Cincinnati Reds,Great American Ball Park,Cincinnati,Ohio,MLB,39.0975,-84.5067
 Columbus Blue Jackets,Nationwide Arena,Columbus,Ohio,NHL,39.9682,-83.0037
 Cincinnati Bengals,Paycor Stadium,Cincinnati,Ohio,NFL,39.0954,-84.5160
 Cleveland Guardians,Progressive Field,Cleveland,Ohio,MLB,41.4958,-81.6853
-Cleveland Cavaliers,Rocket Mortgage FieldHouse,Cleveland,Ohio,NBA,41.4966,ÿ-81.6884
+Cleveland Cavaliers,Rocket Mortgage FieldHouse,Cleveland,Ohio,NBA,41.4966,Â -81.6884
 Oklahoma City Thunder,Paycom Center,Oklahoma City,Oklahoma,NBA,35.4636,-97.5156
 Portland Trail Blazers,Moda Center,Portland,Oregon,NBA,45.5316,-122.6672
 Pittsburgh Steelers,Acrisure Stadium,Pittsburgh,Pennsylvania,NFL,40.4467,-80.0158
@@ -94,8 +94,8 @@ Philadelphia Phillies,Citizens Bank Park,Philadelphia,Pennsylvania,MLB,39.9058,-
 Philadelphia Eagles,Lincoln Financial Field,Philadelphia,Pennsylvania,NFL,39.9008,-75.1675
 Pittsburgh Pirates,PNC Park,Pittsburgh,Pennsylvania,MLB,40.4469,-80.0058
 Pittsburgh Penguins,PPG Paints Arena,Pittsburgh,Pennsylvania,NHL,40.4394,-79.9899
-Philadelphia Flyers,Wells Fargo Center,Philadelphia,Pennsylvania,NHL,ÿ39.9013,-75.1726
-Philadelphia 76ers,Wells Fargo Center,Philadelphia,Pennsylvania,NBA,ÿ39.9013,-75.1726
+Philadelphia Flyers,Wells Fargo Center,Philadelphia,Pennsylvania,NHL,Â 39.9013,-75.1726
+Philadelphia 76ers,Wells Fargo Center,Philadelphia,Pennsylvania,NBA,Â 39.9013,-75.1726
 Nashville Predators,Bridgestone Arena,Nashville,Tennessee,NHL,36.1592,-86.7791
 Memphis Grizzlies,FedExForum,Memphis,Tennessee,NBA,35.1384,-90.0510
 Tennessee Titans,Nissan Stadium,Nashville,Tennessee,NFL,36.1665,-86.7713

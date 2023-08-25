@@ -10,7 +10,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "none",
-        "population total 18+": "553,272"
+        "population total 18+": "553,272.0",
+        "Revenue Per Person": "$nan"
     },
     "1": {
         "": "1",
@@ -23,7 +24,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "none",
-        "population total 18+": "3,919,935"
+        "population total 18+": "3,919,935.0",
+        "Revenue Per Person": "$nan"
     },
     "2": {
         "": "2",
@@ -36,7 +38,8 @@
         "start_month": "2019-07-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "2,322,098"
+        "population total 18+": "2,322,098.0",
+        "Revenue Per Person": "$20.26"
     },
     "3": {
         "": "3",
@@ -49,7 +52,8 @@
         "start_month": "2021-09-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "5,662,032"
+        "population total 18+": "5,662,032.0",
+        "Revenue Per Person": "$155.25"
     },
     "4": {
         "": "4",
@@ -62,7 +66,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "none",
-        "population total 18+": "30,468,057"
+        "population total 18+": "30,468,057.0",
+        "Revenue Per Person": "$nan"
     },
     "5": {
         "": "5",
@@ -75,7 +80,8 @@
         "start_month": "2020-05-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "4,570,122"
+        "population total 18+": "4,570,122.0",
+        "Revenue Per Person": "$187.66"
     },
     "6": {
         "": "6",
@@ -88,7 +94,8 @@
         "start_month": "2021-10-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "2,878,358"
+        "population total 18+": "2,878,358.0",
+        "Revenue Per Person": "$92.23"
     },
     "7": {
         "": "7",
@@ -101,7 +108,8 @@
         "start_month": "2020-05-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "544,321"
+        "population total 18+": "544,321.0",
+        "Revenue Per Person": "$133.14"
     },
     "8": {
         "": "8",
@@ -114,7 +122,8 @@
         "start_month": "2018-06-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "794,867"
+        "population total 18+": "794,867.0",
+        "Revenue Per Person": "$140.33"
     },
     "9": {
         "": "9",
@@ -127,7 +136,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "none",
-        "population total 18+": "17,493,305"
+        "population total 18+": "17,493,305.0",
+        "Revenue Per Person": "$nan"
     },
     "10": {
         "": "10",
@@ -140,7 +150,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "none",
-        "population total 18+": "8,277,442"
+        "population total 18+": "8,277,442.0",
+        "Revenue Per Person": "$nan"
     },
     "11": {
         "": "11",
@@ -153,7 +164,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "none",
-        "population total 18+": "1,137,352"
+        "population total 18+": "1,137,352.0",
+        "Revenue Per Person": "$nan"
     },
     "12": {
         "": "12",
@@ -166,7 +178,8 @@
         "start_month": "2019-08-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "2,456,095"
+        "population total 18+": "2,456,095.0",
+        "Revenue Per Person": "$178.40"
     },
     "13": {
         "": "13",
@@ -179,7 +192,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "none",
-        "population total 18+": "1,430,937"
+        "population total 18+": "1,430,937.0",
+        "Revenue Per Person": "$nan"
     },
     "14": {
         "": "14",
@@ -192,7 +206,8 @@
         "start_month": "2020-03-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "9,871,292"
+        "population total 18+": "9,871,292.0",
+        "Revenue Per Person": "$198.77"
     },
     "15": {
         "": "15",
@@ -205,7 +220,8 @@
         "start_month": "2019-09-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "5,220,587"
+        "population total 18+": "5,220,587.0",
+        "Revenue Per Person": "$207.96"
     },
     "16": {
         "": "16",
@@ -218,7 +234,8 @@
         "start_month": "2022-09-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "2,232,376"
+        "population total 18+": "2,232,376.0",
+        "Revenue Per Person": "$66.80"
     },
     "17": {
         "": "17",
@@ -231,7 +248,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Pending Both",
-        "population total 18+": "3,493,939"
+        "population total 18+": "3,493,939.0",
+        "Revenue Per Person": "$nan"
     },
     "18": {
         "": "18",
@@ -244,7 +262,8 @@
         "start_month": "2021-11-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "3,542,004"
+        "population total 18+": "3,542,004.0",
+        "Revenue Per Person": "$108.51"
     },
     "19": {
         "": "19",
@@ -257,7 +276,8 @@
         "start_month": "2023-01-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "5,622,783"
+        "population total 18+": "5,622,783.0",
+        "Revenue Per Person": "$36.48"
     },
     "20": {
         "": "20",
@@ -270,7 +290,8 @@
         "start_month": "2021-12-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "4,805,032"
+        "population total 18+": "4,805,032.0",
+        "Revenue Per Person": "$90.24"
     },
     "21": {
         "": "21",
@@ -283,7 +304,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Pending Both",
-        "population total 18+": "1,122,572"
+        "population total 18+": "1,122,572.0",
+        "Revenue Per Person": "$nan"
     },
     "22": {
         "": "22",
@@ -296,7 +318,8 @@
         "start_month": "2020-03-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "7,898,874"
+        "population total 18+": "7,898,874.0",
+        "Revenue Per Person": "$120.23"
     },
     "23": {
         "": "23",
@@ -309,7 +332,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "none",
-        "population total 18+": "4,398,409"
+        "population total 18+": "4,398,409.0",
+        "Revenue Per Person": "$nan"
     },
     "24": {
         "": "24",
@@ -322,7 +346,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "none",
-        "population total 18+": "4,784,650"
+        "population total 18+": "4,784,650.0",
+        "Revenue Per Person": "$nan"
     },
     "25": {
         "": "25",
@@ -335,7 +360,8 @@
         "start_month": "2018-08-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "2,258,080"
+        "population total 18+": "2,258,080.0",
+        "Revenue Per Person": "$111.85"
     },
     "26": {
         "": "26",
@@ -348,7 +374,8 @@
         "start_month": "2020-03-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "869,424"
+        "population total 18+": "869,424.0",
+        "Revenue Per Person": "$23.64"
     },
     "27": {
         "": "27",
@@ -361,7 +388,8 @@
         "start_month": "2023-08-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "8,251,416"
+        "population total 18+": "8,251,416.0",
+        "Revenue Per Person": "$nan"
     },
     "28": {
         "": "28",
@@ -374,7 +402,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "592,359"
+        "population total 18+": "592,359.0",
+        "Revenue Per Person": "$nan"
     },
     "29": {
         "": "29",
@@ -387,7 +416,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "Pending In-Person",
-        "population total 18+": "1,481,490"
+        "population total 18+": "1,481,490.0",
+        "Revenue Per Person": "$nan"
     },
     "30": {
         "": "30",
@@ -400,7 +430,8 @@
         "start_month": "2019-12-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "1,132,738"
+        "population total 18+": "1,132,738.0",
+        "Revenue Per Person": "$155.88"
     },
     "31": {
         "": "31",
@@ -413,7 +444,8 @@
         "start_month": "2018-06-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "7,246,254"
+        "population total 18+": "7,246,254.0",
+        "Revenue Per Person": "$387.84"
     },
     "32": {
         "": "32",
@@ -426,7 +458,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "1,644,069"
+        "population total 18+": "1,644,069.0",
+        "Revenue Per Person": "$nan"
     },
     "33": {
         "": "33",
@@ -439,7 +472,8 @@
         "start_month": "2018-06-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "2,446,372"
+        "population total 18+": "2,446,372.0",
+        "Revenue Per Person": "$770.78"
     },
     "34": {
         "": "34",
@@ -452,7 +486,8 @@
         "start_month": "2019-07-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "15,732,347"
+        "population total 18+": "15,732,347.0",
+        "Revenue Per Person": "$141.87"
     },
     "35": {
         "": "35",
@@ -465,7 +500,8 @@
         "start_month": "2023-01-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "9,176,607"
+        "population total 18+": "9,176,607.0",
+        "Revenue Per Person": "$59.02"
     },
     "36": {
         "": "36",
@@ -478,7 +514,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "none",
-        "population total 18+": "3,028,701"
+        "population total 18+": "3,028,701.0",
+        "Revenue Per Person": "$nan"
     },
     "37": {
         "": "37",
@@ -491,7 +528,8 @@
         "start_month": "2019-10-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "3,387,489"
+        "population total 18+": "3,387,489.0",
+        "Revenue Per Person": "$35.66"
     },
     "38": {
         "": "38",
@@ -504,7 +542,8 @@
         "start_month": "2018-11-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "10,289,829"
+        "population total 18+": "10,289,829.0",
+        "Revenue Per Person": "$176.57"
     },
     "39": {
         "": "39",
@@ -517,7 +556,8 @@
         "start_month": "2018-11-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "887,289"
+        "population total 18+": "887,289.0",
+        "Revenue Per Person": "$171.75"
     },
     "40": {
         "": "40",
@@ -530,7 +570,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "none",
-        "population total 18+": "4,074,709"
+        "population total 18+": "4,074,709.0",
+        "Revenue Per Person": "$nan"
     },
     "41": {
         "": "41",
@@ -543,7 +584,8 @@
         "start_month": "2021-09-01",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "674,755"
+        "population total 18+": "674,755.0",
+        "Revenue Per Person": "$2.53"
     },
     "42": {
         "": "42",
@@ -556,7 +598,8 @@
         "start_month": "2020-11-01",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "Online Only",
-        "population total 18+": "5,437,603"
+        "population total 18+": "5,437,603.0",
+        "Revenue Per Person": "$163.00"
     },
     "43": {
         "": "43",
@@ -569,7 +612,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "none",
-        "population total 18+": "22,071,394"
+        "population total 18+": "22,071,394.0",
+        "Revenue Per Person": "$nan"
     },
     "44": {
         "": "44",
@@ -582,7 +626,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "none",
-        "population total 18+": "2,392,518"
+        "population total 18+": "2,392,518.0",
+        "Revenue Per Person": "$nan"
     },
     "45": {
         "": "45",
@@ -595,7 +640,8 @@
         "start_month": "2021-01-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "6,760,456"
+        "population total 18+": "6,760,456.0",
+        "Revenue Per Person": "$153.46"
     },
     "46": {
         "": "46",
@@ -608,7 +654,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Pending Online",
-        "population total 18+": "528,803"
+        "population total 18+": "528,803.0",
+        "Revenue Per Person": "$nan"
     },
     "47": {
         "": "47",
@@ -621,7 +668,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "6,062,910"
+        "population total 18+": "6,062,910.0",
+        "Revenue Per Person": "$nan"
     },
     "48": {
         "": "48",
@@ -634,7 +682,8 @@
         "start_month": "",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "In-Person Only",
-        "population total 18+": "4,621,303"
+        "population total 18+": "4,621,303.0",
+        "Revenue Per Person": "$nan"
     },
     "49": {
         "": "49",
@@ -647,7 +696,8 @@
         "start_month": "2018-08-01",
         "state_taxes_on_gambling": "Yes",
         "ways_to_bet": "Online & In-Person",
-        "population total 18+": "1,421,567"
+        "population total 18+": "1,421,567.0",
+        "Revenue Per Person": "$119.25"
     },
     "50": {
         "": "50",
@@ -660,6 +710,7 @@
         "start_month": "2021-09-01",
         "state_taxes_on_gambling": "No",
         "ways_to_bet": "Online Only",
-        "population total 18+": "447,274"
+        "population total 18+": "447,274.0",
+        "Revenue Per Person": "$59.65"
     }
 }
