@@ -55,17 +55,17 @@ function fetchAndDisplayData(jsonUrl) {
 
 // Function to display bar chart based on data using Chart.js
 function displayBarChart(sampleValues, otuIds, otuLabels) {
-    // Your Chart.js bar chart code here
+    // Chart.js bar chart code here
 }
 
 // Function to display bubble chart based on data using Chart.js
 function displayBubbleChart(sampleValues, otuIds, otuLabels) {
-    // Your Chart.js bubble chart code here
+    // Chart.js bubble chart code here
 }
 
 // Function to display gauge chart based on data using Chart.js
 function displayGaugeChart(washFreq) {
-    // Your Chart.js gauge chart code here
+    // Chart.js gauge chart code here
 }
 
 // Function to handle JSON file change
