@@ -1,0 +1,140 @@
+/* Set root defaults */
+:root {
+    background-color: #ffffff;
+    color: #111111;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;  
+}
+/* Set core body defaults */
+body {  
+  display:grid; 
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;  
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  margin: 0;
+  margin-top: 4px;
+  padding: 5px;
+}
+.gender ul {
+    padding: 0;
+}
+
+/* Custom class and id definitions */
+.head-container {    
+    display: grid;
+    height: 70px;
+    grid-template-columns: 7% 33% 60%;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    color: #7e08a9;
+    
+}
+.child {
+    height: 70px;
+    background-color: #eed117
+}
+#hlogo {
+    width: 70px;
+    height: 70px;    
+}
+#ptitle {    
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    color: #0e0f0f;
+    height: 70px;    
+}
+.child menu {
+    display: grid;    
+    align-self:center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;    
+} 
+#ulmenu {
+    display: grid;
+    grid-template-columns: 17% 17% 22% 22% 22%;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 800;   
+    align-items: center; 
+    height: 40px;
+}
+#ulmenu :hover {
+    background-color: #090909;
+    border-radius: 20px;
+    cursor: pointer;   
+    line-height: 40px;  
+}
+#hotels, #beaches, #restaurants, #destinations, #things {    
+    text-align: center;    
+    align-items: center;
+    justify-content: center;
+    display: table-cell;
+    color: #8807d2;
+}
+.main-container {    
+    display: grid;    
+/*     grid-template-columns: 42% 28% 30%; */
+    grid-template-columns: 550px 400px 1fr;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    padding-inline-start: 5px;    
+}
+#islot {
+    list-style-type: none;
+    padding-inline-start: 5px;
+}
+#pics {    
+    width: 550px;
+    height: 400x;
+}
+#rankName {
+    width: 550px;
+}
+#imgDesc {
+    width: 550px;
+    font-weight: normal;
+}
+#myChart * .funnelarealayer {
+    width: 400px;
+/*     height: 400px; */
+    padding-inline-start: 1px;
+}
+#myMap {
+    top: 10%;
+    width: 800px;
+    height: 600px;
+    vertical-align: top;
+    display: inline-block;
+    position: fixed;
+    padding-inline-start: 2px;
+}
+
+.custom-marker {
+    background-color: #1e9176;
+    border-radius: 50%;
+    color: #000000;
+    text-align: center;
+}
+
+.marker-label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.plot-container plotly {
+    margin-top: 2px;
+}
+.user-select-none svg-container {
+    margin-top: 2px;
+}
+.main-svg {
+    margin-top: 5px;
+}
