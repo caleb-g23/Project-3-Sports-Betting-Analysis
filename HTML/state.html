@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="filters">
+            <label for="stateDropdown">Select a State:</label>
+            <select id="stateDropdown"></select>
+        </div>
+        <div class="content">
+            <div class="state-info">
+                <h2>State Information</h2>
+                <div id="stateData"></div>
+            </div>
+            <div class="visualization">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <script src="state.js"></script>
+</body>
+</html>
