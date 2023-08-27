@@ -72,3 +72,80 @@ fetch(link)
 
         }).addTo(map);
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+//______________________________________VICKY________________________________________________________________________________________
+
+// Function to fetch and display data for the selected JSON file
+function fetchAndDisplayData(jsonUrl) {
+    // Fetch JSON data
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Clear existing markers on the map
+            map.eachLayer(function (layer) {
+                if (layer instanceof L.Marker) {
+                    map.removeLayer(layer);
+                }
+            });
+
+            // Add markers to the map based on data (example)
+            if (data.markers) {
+                data.markers.forEach(function (markerData) {
+                    L.marker([markerData.lat, markerData.lon]).addTo(map);
+                });
+            }
+
+            // Display charts based on data using Chart.js
+            if (data.barChart) {
+                displayBarChart(data.barChart.sampleValues, data.barChart.otuIds, data.barChart.otuLabels);
+            }
+            if (data.bubbleChart) {
+                displayBubbleChart(data.bubbleChart.sampleValues, data.bubbleChart.otuIds, data.bubbleChart.otuLabels);
+            }
+            if (data.gaugeChart) {
+                displayGaugeChart(data.gaugeChart.washFreq);
+            }
+
+        })
+        .catch(error => console.error("Error fetching JSON data:", error));
+}
+
+// Function to display bar chart based on data using Chart.js
+function displayBarChart(sampleValues, otuIds, otuLabels) {
+    // Chart.js bar chart code here
+}
+
+// Function to display bubble chart based on data using Chart.js
+function displayBubbleChart(sampleValues, otuIds, otuLabels) {
+    // Chart.js bubble chart code here
+}
+
+// Function to display gauge chart based on data using Chart.js
+function displayGaugeChart(washFreq) {
+    // Chart.js gauge chart code here
+}
+
+// Function to handle JSON file change
+function jsonChange() {
+    const selectedJsonUrl = dropdown.property("value");
+    fetchAndDisplayData(selectedJsonUrl);
+}
+
+// Set up event listener for JSON file changes
+dropdown.on("change", jsonChange);
+
+// Initialize page with data from the first JSON file
+const initialJsonUrl = jsonFiles[0].url;
+fetchAndDisplayData(initialJsonUrl);
