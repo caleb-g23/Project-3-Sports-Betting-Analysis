@@ -1,0 +1,1152 @@
+{
+    "0": {
+        "": "0",
+        "state": "Arizona",
+        "League": "MLB",
+        "Team": "Arizona Diamondbacks",
+        "City": "Phoenix",
+        "Venue": "Chase Field",
+        "lat": "33.4453",
+        "lon": "-112.0669"
+    },
+    "1": {
+        "": "1",
+        "state": "Arizona",
+        "League": "NBA",
+        "Team": "Phoenix Suns",
+        "City": "Phoenix",
+        "Venue": "Footprint Center",
+        "lat": "33.4459",
+        "lon": "-112.0715"
+    },
+    "2": {
+        "": "2",
+        "state": "Arizona",
+        "League": "NHL",
+        "Team": "Arizona Coyotes",
+        "City": "Tempe",
+        "Venue": "Mullett Arena",
+        "lat": "33.4267",
+        "lon": "-111.9286"
+    },
+    "3": {
+        "": "3",
+        "state": "Arizona",
+        "League": "NFL",
+        "Team": "Arizona Cardinals",
+        "City": "Glendale",
+        "Venue": "State Farm Stadium",
+        "lat": "33.5277",
+        "lon": "-112.2626"
+    },
+    "4": {
+        "": "4",
+        "state": "California",
+        "League": "MLB",
+        "Team": "Los Angeles Angels",
+        "City": "Anaheim",
+        "Venue": "Angel Stadium",
+        "lat": "33.8003",
+        "lon": "-117.8828"
+    },
+    "5": {
+        "": "5",
+        "state": "California",
+        "League": "NBA",
+        "Team": "Golden State Warriors",
+        "City": "San Francisco",
+        "Venue": "Chase Center",
+        "lat": "37.7680",
+        "lon": "-122.3878"
+    },
+    "6": {
+        "": "6",
+        "state": "California",
+        "League": "NHL",
+        "Team": "Los Angeles Kings",
+        "City": "Los Angeles",
+        "Venue": "Crypto.com Arena",
+        "lat": "34.0430",
+        "lon": "-118.2673"
+    },
+    "7": {
+        "": "7",
+        "state": "California",
+        "League": "NBA",
+        "Team": "Los Angeles Clippers",
+        "City": "Los Angeles",
+        "Venue": "Crypto.com Arena",
+        "lat": "34.0430",
+        "lon": "-118.2673"
+    },
+    "8": {
+        "": "8",
+        "state": "California",
+        "League": "NBA",
+        "Team": "Los Angeles Lakers",
+        "City": "Los Angeles",
+        "Venue": "Crypto.com Arena",
+        "lat": "34.0430",
+        "lon": "-118.2673"
+    },
+    "9": {
+        "": "9",
+        "state": "California",
+        "League": "MLB",
+        "Team": "Los Angeles Dodgers",
+        "City": "Los Angeles",
+        "Venue": "Dodger Stadium",
+        "lat": "34.0736",
+        "lon": "-118.2400"
+    },
+    "10": {
+        "": "10",
+        "state": "California",
+        "League": "NBA",
+        "Team": "Sacramento Kings",
+        "City": "Sacramento",
+        "Venue": "Golden 1 Center",
+        "lat": "38.5802",
+        "lon": "-121.4997"
+    },
+    "11": {
+        "": "11",
+        "state": "California",
+        "League": "NHL",
+        "Team": "Anaheim Ducks",
+        "City": "Anaheim",
+        "Venue": "Honda Center",
+        "lat": "33.8047",
+        "lon": "-117.8727"
+    },
+    "12": {
+        "": "12",
+        "state": "California",
+        "League": "NFL",
+        "Team": "San Francisco 49ers",
+        "City": "Santa Clara",
+        "Venue": "Levi's Stadium",
+        "lat": "37.4030",
+        "lon": "-121.9700"
+    },
+    "13": {
+        "": "13",
+        "state": "California",
+        "League": "MLB",
+        "Team": "Oakland Athletics",
+        "City": "Oakland",
+        "Venue": "Oakland Coliseum",
+        "lat": "37.7517",
+        "lon": "-122.2006"
+    },
+    "14": {
+        "": "14",
+        "state": "California",
+        "League": "MLB",
+        "Team": "San Francisco Giants",
+        "City": "San Francisco",
+        "Venue": "Oracle Park",
+        "lat": "37.7783",
+        "lon": "-122.3894"
+    },
+    "15": {
+        "": "15",
+        "state": "California",
+        "League": "MLB",
+        "Team": "San Diego Padres",
+        "City": "San Diego",
+        "Venue": "Petco Park",
+        "lat": "32.7073",
+        "lon": "-117.1566"
+    },
+    "16": {
+        "": "16",
+        "state": "California",
+        "League": "NHL",
+        "Team": "San Jose Sharks",
+        "City": "San Jose",
+        "Venue": "SAP Center at San Jose",
+        "lat": "37.3263",
+        "lon": "37.3263"
+    },
+    "17": {
+        "": "17",
+        "state": "California",
+        "League": "NFL",
+        "Team": "Los Angeles Chargers",
+        "City": "Inglewood",
+        "Venue": "SoFi Stadium",
+        "lat": "33.9530",
+        "lon": "-118.3390"
+    },
+    "18": {
+        "": "18",
+        "state": "California",
+        "League": "NFL",
+        "Team": "Los Angeles Rams",
+        "City": "Inglewood",
+        "Venue": "SoFi Stadium",
+        "lat": "33.9530",
+        "lon": "-118.3390"
+    },
+    "19": {
+        "": "19",
+        "state": "Colorado",
+        "League": "NBA",
+        "Team": "Denver Nuggets",
+        "City": "Denver",
+        "Venue": "Ball Arena",
+        "lat": "39.7489",
+        "lon": "-105.0084"
+    },
+    "20": {
+        "": "20",
+        "state": "Colorado",
+        "League": "NHL",
+        "Team": "Colorado Avalanche",
+        "City": "Denver",
+        "Venue": "Ball Arena",
+        "lat": "39.7489",
+        "lon": "-105.0084"
+    },
+    "21": {
+        "": "21",
+        "state": "Colorado",
+        "League": "MLB",
+        "Team": "Colorado Rockies",
+        "City": "Denver",
+        "Venue": "Coors Field",
+        "lat": "39.7561",
+        "lon": "-104.9942"
+    },
+    "22": {
+        "": "22",
+        "state": "Colorado",
+        "League": "NFL",
+        "Team": "Denver Broncos",
+        "City": "Denver",
+        "Venue": "Empower Field at Mile High",
+        "lat": "39.7439",
+        "lon": "-105.0200"
+    },
+    "23": {
+        "": "23",
+        "state": "District of Columbia",
+        "League": "NHL",
+        "Team": "Washington Capitals",
+        "City": "Washington",
+        "Venue": "Capital One Arena",
+        "lat": "38.8981",
+        "lon": "-77.0212"
+    },
+    "24": {
+        "": "24",
+        "state": "District of Columbia",
+        "League": "NBA",
+        "Team": "Washington Wizards",
+        "City": "Washington",
+        "Venue": "Capital One Arena",
+        "lat": "38.8981",
+        "lon": "-77.0212"
+    },
+    "25": {
+        "": "25",
+        "state": "District of Columbia",
+        "League": "MLB",
+        "Team": "Washington Nationals",
+        "City": "Washington",
+        "Venue": "Nationals Park",
+        "lat": "38.8728",
+        "lon": "-77.0075"
+    },
+    "26": {
+        "": "26",
+        "state": "Florida",
+        "League": "NHL",
+        "Team": "Tampa Bay Lightning",
+        "City": "Tampa",
+        "Venue": "Amalie Arena",
+        "lat": "27.9427",
+        "lon": "-82.4521"
+    },
+    "27": {
+        "": "27",
+        "state": "Florida",
+        "League": "NBA",
+        "Team": "Orlando Magic",
+        "City": "Orlando",
+        "Venue": "Amway Center",
+        "lat": "28.5392",
+        "lon": "-81.3836"
+    },
+    "28": {
+        "": "28",
+        "state": "Florida",
+        "League": "NHL",
+        "Team": "Florida Panthers",
+        "City": "Sunrise",
+        "Venue": "FLA Live Arena",
+        "lat": "26.1585",
+        "lon": "-80.3260"
+    },
+    "29": {
+        "": "29",
+        "state": "Florida",
+        "League": "NFL",
+        "Team": "Miami Dolphins",
+        "City": "Miami Gardens",
+        "Venue": "Hard Rock Stadium",
+        "lat": "25.9581",
+        "lon": "-80.2389"
+    },
+    "30": {
+        "": "30",
+        "state": "Florida",
+        "League": "NBA",
+        "Team": "Miami Heat",
+        "City": "Miami",
+        "Venue": "Kaseya Center",
+        "lat": "25.7814",
+        "lon": "-80.1883"
+    },
+    "31": {
+        "": "31",
+        "state": "Florida",
+        "League": "MLB",
+        "Team": "Miami Marlins",
+        "City": "Miami",
+        "Venue": "loanDepot Park",
+        "lat": "25.7781",
+        "lon": "-80.2197"
+    },
+    "32": {
+        "": "32",
+        "state": "Florida",
+        "League": "NFL",
+        "Team": "Tampa Bay Buccaneers",
+        "City": "Tampa",
+        "Venue": "Raymond James Stadium",
+        "lat": "27.9760",
+        "lon": "-82.5034"
+    },
+    "33": {
+        "": "33",
+        "state": "Florida",
+        "League": "NFL",
+        "Team": "Jacksonville Jaguars",
+        "City": "Jacksonville",
+        "Venue": "TIAA Bank Field",
+        "lat": "30.3239",
+        "lon": "-81.6375"
+    },
+    "34": {
+        "": "34",
+        "state": "Florida",
+        "League": "MLB",
+        "Team": "Tampa Bay Rays",
+        "City": "St. Petersburg",
+        "Venue": "Tropicana Field",
+        "lat": "27.7683",
+        "lon": "-82.6533"
+    },
+    "35": {
+        "": "35",
+        "state": "Georgia",
+        "League": "NFL",
+        "Team": "Atlanta Falcons",
+        "City": "Atlanta",
+        "Venue": "Mercedes-Benz Stadium",
+        "lat": "33.7576",
+        "lon": "-84.4010"
+    },
+    "36": {
+        "": "36",
+        "state": "Georgia",
+        "League": "NBA",
+        "Team": "Atlanta Hawks",
+        "City": "Atlanta",
+        "Venue": "State Farm Arena",
+        "lat": "33.7573",
+        "lon": "-84.3963"
+    },
+    "37": {
+        "": "37",
+        "state": "Georgia",
+        "League": "MLB",
+        "Team": "Atlanta Braves",
+        "City": "Cumberland",
+        "Venue": "Truist Park",
+        "lat": "33.7353",
+        "lon": "-84.3894"
+    },
+    "38": {
+        "": "38",
+        "state": "Illinois",
+        "League": "MLB",
+        "Team": "Chicago White Sox",
+        "City": "Chicago",
+        "Venue": "Guaranteed Rate Field",
+        "lat": "41.8300",
+        "lon": "-87.6339"
+    },
+    "39": {
+        "": "39",
+        "state": "Illinois",
+        "League": "NFL",
+        "Team": "Chicago Bears",
+        "City": "Chicago",
+        "Venue": "Soldier Field",
+        "lat": "41.8623",
+        "lon": "-87.6167"
+    },
+    "40": {
+        "": "40",
+        "state": "Illinois",
+        "League": "NHL",
+        "Team": "Chicago Blackhawks",
+        "City": "Chicago",
+        "Venue": "United Center",
+        "lat": "41.8807",
+        "lon": "-87.6744"
+    },
+    "41": {
+        "": "41",
+        "state": "Illinois",
+        "League": "NBA",
+        "Team": "Chicago Bulls",
+        "City": "Chicago",
+        "Venue": "United Center",
+        "lat": "41.8807",
+        "lon": "-87.6744"
+    },
+    "42": {
+        "": "42",
+        "state": "Illinois",
+        "League": "MLB",
+        "Team": "Chicago Cubs",
+        "City": "Chicago",
+        "Venue": "Wrigley Field",
+        "lat": "41.9483",
+        "lon": "-87.6556"
+    },
+    "43": {
+        "": "43",
+        "state": "Indiana",
+        "League": "NBA",
+        "Team": "Indiana Pacers",
+        "City": "Indianapolis",
+        "Venue": "Gainbridge Fieldhouse",
+        "lat": "39.7639",
+        "lon": "-86.1558"
+    },
+    "44": {
+        "": "44",
+        "state": "Indiana",
+        "League": "NFL",
+        "Team": "Indianapolis Colts",
+        "City": "Indianapolis",
+        "Venue": "Lucas Oil Stadium",
+        "lat": "39.7601",
+        "lon": "-86.1638"
+    },
+    "45": {
+        "": "45",
+        "state": "Louisiana",
+        "League": "NFL",
+        "Team": "New Orleans Saints",
+        "City": "New Orleans",
+        "Venue": "Caesars Superdome",
+        "lat": "29.9508",
+        "lon": "-90.0811"
+    },
+    "46": {
+        "": "46",
+        "state": "Louisiana",
+        "League": "NBA",
+        "Team": "New Orleans Pelicans",
+        "City": "New Orleans",
+        "Venue": "Smoothie King Center",
+        "lat": "29.9490",
+        "lon": "90.0823"
+    },
+    "47": {
+        "": "47",
+        "state": "Maryland",
+        "League": "NFL",
+        "Team": "Washington Commanders",
+        "City": "Landover",
+        "Venue": "FedExField",
+        "lat": "38.9078",
+        "lon": "-76.8644"
+    },
+    "48": {
+        "": "48",
+        "state": "Maryland",
+        "League": "NFL",
+        "Team": "Baltimore Ravens",
+        "City": "Baltimore",
+        "Venue": "M&T Bank Stadium",
+        "lat": "39.2780",
+        "lon": "-76.6228"
+    },
+    "49": {
+        "": "49",
+        "state": "Maryland",
+        "League": "MLB",
+        "Team": "Baltimore Orioles",
+        "City": "Baltimore",
+        "Venue": "Oriole Park at Camden Yards",
+        "lat": "39.2839",
+        "lon": "-76.6217"
+    },
+    "50": {
+        "": "50",
+        "state": "Massachusetts",
+        "League": "MLB",
+        "Team": "Boston Red Sox",
+        "City": "Boston",
+        "Venue": "Fenway Park",
+        "lat": "42.3464",
+        "lon": "-71.0975"
+    },
+    "51": {
+        "": "51",
+        "state": "Massachusetts",
+        "League": "NFL",
+        "Team": "New England Patriots",
+        "City": "Foxborough",
+        "Venue": "Gillette Stadium",
+        "lat": "42.0909",
+        "lon": "-71.2643"
+    },
+    "52": {
+        "": "52",
+        "state": "Massachusetts",
+        "League": "NHL",
+        "Team": "Boston Bruins",
+        "City": "Boston",
+        "Venue": "TD Garden",
+        "lat": "42.3663",
+        "lon": "\u00a0-71.0626"
+    },
+    "53": {
+        "": "53",
+        "state": "Massachusetts",
+        "League": "NBA",
+        "Team": "Boston Celtics",
+        "City": "Boston",
+        "Venue": "TD Garden",
+        "lat": "42.3663",
+        "lon": "\u00a0-71.0626"
+    },
+    "54": {
+        "": "54",
+        "state": "Michigan",
+        "League": "MLB",
+        "Team": "Detroit Tigers",
+        "City": "Detroit",
+        "Venue": "Comerica Park",
+        "lat": "42.3392",
+        "lon": "-83.0486"
+    },
+    "55": {
+        "": "55",
+        "state": "Michigan",
+        "League": "NFL",
+        "Team": "Detroit Lions",
+        "City": "Detroit",
+        "Venue": "Ford Field",
+        "lat": "42.3400",
+        "lon": "-83.0456"
+    },
+    "56": {
+        "": "56",
+        "state": "Michigan",
+        "League": "NHL",
+        "Team": "Detroit Red Wings",
+        "City": "Detroit",
+        "Venue": "Little Caesars Arena",
+        "lat": "42.3411",
+        "lon": "-83.0553"
+    },
+    "57": {
+        "": "57",
+        "state": "Michigan",
+        "League": "NBA",
+        "Team": "Detroit Pistons",
+        "City": "Detroit",
+        "Venue": "Little Caesars Arena",
+        "lat": "42.3411",
+        "lon": "-83.0553"
+    },
+    "58": {
+        "": "58",
+        "state": "Minnesota",
+        "League": "NBA",
+        "Team": "Minnesota Timberwolves",
+        "City": "Minneapolis",
+        "Venue": "Target Center",
+        "lat": "44.9796",
+        "lon": "-93.2766"
+    },
+    "59": {
+        "": "59",
+        "state": "Minnesota",
+        "League": "MLB",
+        "Team": "Minnesota Twins",
+        "City": "Minneapolis",
+        "Venue": "Target Field",
+        "lat": "44.9817",
+        "lon": "-93.2783"
+    },
+    "60": {
+        "": "60",
+        "state": "Minnesota",
+        "League": "NFL",
+        "Team": "Minnesota Vikings",
+        "City": "Minneapolis",
+        "Venue": "U.S. Bank Stadium",
+        "lat": "44.9739",
+        "lon": "-93.2581"
+    },
+    "61": {
+        "": "61",
+        "state": "Minnesota",
+        "League": "NHL",
+        "Team": "Minnesota Wild",
+        "City": "St. Paul",
+        "Venue": "Xcel Energy Center",
+        "lat": "44.9402",
+        "lon": "\u00a0-93.1007"
+    },
+    "62": {
+        "": "62",
+        "state": "Missouri",
+        "League": "NFL",
+        "Team": "Kansas City Chiefs",
+        "City": "Kansas City",
+        "Venue": "Arrowhead Stadium",
+        "lat": "39.0489",
+        "lon": "-94.4839"
+    },
+    "63": {
+        "": "63",
+        "state": "Missouri",
+        "League": "MLB",
+        "Team": "St. Louis Cardinals",
+        "City": "St. Louis",
+        "Venue": "Busch Stadium",
+        "lat": "38.6225",
+        "lon": "-90.1931"
+    },
+    "64": {
+        "": "64",
+        "state": "Missouri",
+        "League": "NHL",
+        "Team": "St. Louis Blues",
+        "City": "St. Louis",
+        "Venue": "Enterprise Center",
+        "lat": "38.6270",
+        "lon": "-90.2032"
+    },
+    "65": {
+        "": "65",
+        "state": "Missouri",
+        "League": "MLB",
+        "Team": "Kansas City Royals",
+        "City": "Kansas City",
+        "Venue": "Kauffman Stadium",
+        "lat": "39.0514",
+        "lon": "-94.4806"
+    },
+    "66": {
+        "": "66",
+        "state": "Nevada",
+        "League": "NFL",
+        "Team": "Las Vegas Raiders",
+        "City": "Paradise",
+        "Venue": "Allegiant Stadium",
+        "lat": "36.0906",
+        "lon": "-115.1839"
+    },
+    "67": {
+        "": "67",
+        "state": "Nevada",
+        "League": "NHL",
+        "Team": "Vegas Golden Knights",
+        "City": "Paradise",
+        "Venue": "T-Mobile Arena",
+        "lat": "36.1030",
+        "lon": "\u00a0-115.1787"
+    },
+    "68": {
+        "": "68",
+        "state": "New Jersey",
+        "League": "NFL",
+        "Team": "New York Giants",
+        "City": "East Rutherford",
+        "Venue": "MetLife Stadium",
+        "lat": "40.8122",
+        "lon": "-74.0770"
+    },
+    "69": {
+        "": "69",
+        "state": "New Jersey",
+        "League": "NFL",
+        "Team": "New York Jets",
+        "City": "East Rutherford",
+        "Venue": "MetLife Stadium",
+        "lat": "40.8122",
+        "lon": "-74.0770"
+    },
+    "70": {
+        "": "70",
+        "state": "New Jersey",
+        "League": "NHL",
+        "Team": "New Jersey Devils",
+        "City": "Newark",
+        "Venue": "Prudential Center",
+        "lat": "40.7335",
+        "lon": "-74.1693"
+    },
+    "71": {
+        "": "71",
+        "state": "New York",
+        "League": "NBA",
+        "Team": "Brooklyn Nets",
+        "City": "New York City",
+        "Venue": "Barclays Center",
+        "lat": "40.6827",
+        "lon": "-73.9759"
+    },
+    "72": {
+        "": "72",
+        "state": "New York",
+        "League": "MLB",
+        "Team": "New York Mets",
+        "City": "New York City",
+        "Venue": "Citi Field",
+        "lat": "40.7569",
+        "lon": "-73.8458"
+    },
+    "73": {
+        "": "73",
+        "state": "New York",
+        "League": "NFL",
+        "Team": "Buffalo Bills",
+        "City": "Orchard Park",
+        "Venue": "Highmark Stadium",
+        "lat": "42.7737",
+        "lon": "-78.7870"
+    },
+    "74": {
+        "": "74",
+        "state": "New York",
+        "League": "NHL",
+        "Team": "Buffalo Sabres",
+        "City": "Buffalo",
+        "Venue": "KeyBank Center",
+        "lat": "42.8751",
+        "lon": "-78.8768"
+    },
+    "75": {
+        "": "75",
+        "state": "New York",
+        "League": "NBA",
+        "Team": "New York Knicks",
+        "City": "New York City",
+        "Venue": "Madison Square Garden",
+        "lat": "40.7503",
+        "lon": "-73.9933"
+    },
+    "76": {
+        "": "76",
+        "state": "New York",
+        "League": "NHL",
+        "Team": "New York Rangers",
+        "City": "New York City",
+        "Venue": "Madison Square Garden",
+        "lat": "40.7503",
+        "lon": "-73.9933"
+    },
+    "77": {
+        "": "77",
+        "state": "New York",
+        "League": "NHL",
+        "Team": "New York Islanders",
+        "City": "Elmont",
+        "Venue": "UBS Arena",
+        "lat": "40.7118",
+        "lon": "-73.7260"
+    },
+    "78": {
+        "": "78",
+        "state": "New York",
+        "League": "MLB",
+        "Team": "New York Yankees",
+        "City": "New York City",
+        "Venue": "Yankee Stadium",
+        "lat": "40.8292",
+        "lon": "-73.9264"
+    },
+    "79": {
+        "": "79",
+        "state": "North Carolina",
+        "League": "NFL",
+        "Team": "Carolina Panthers",
+        "City": "Charlotte",
+        "Venue": "Bank of America Stadium",
+        "lat": "35.2258",
+        "lon": "-80.8528"
+    },
+    "80": {
+        "": "80",
+        "state": "North Carolina",
+        "League": "NHL",
+        "Team": "Carolina Hurricanes",
+        "City": "Raleigh",
+        "Venue": "PNC Arena",
+        "lat": "35.8020",
+        "lon": "-78.7198"
+    },
+    "81": {
+        "": "81",
+        "state": "North Carolina",
+        "League": "NBA",
+        "Team": "Charlotte Hornets",
+        "City": "Charlotte",
+        "Venue": "Spectrum Center",
+        "lat": "35.2252",
+        "lon": "-80.8393"
+    },
+    "82": {
+        "": "82",
+        "state": "Ohio",
+        "League": "NFL",
+        "Team": "Cleveland Browns",
+        "City": "Cleveland",
+        "Venue": "FirstEnergy Stadium",
+        "lat": "41.5061",
+        "lon": "-81.6994"
+    },
+    "83": {
+        "": "83",
+        "state": "Ohio",
+        "League": "MLB",
+        "Team": "Cincinnati Reds",
+        "City": "Cincinnati",
+        "Venue": "Great American Ball Park",
+        "lat": "39.0975",
+        "lon": "-84.5067"
+    },
+    "84": {
+        "": "84",
+        "state": "Ohio",
+        "League": "NHL",
+        "Team": "Columbus Blue Jackets",
+        "City": "Columbus",
+        "Venue": "Nationwide Arena",
+        "lat": "39.9682",
+        "lon": "-83.0037"
+    },
+    "85": {
+        "": "85",
+        "state": "Ohio",
+        "League": "NFL",
+        "Team": "Cincinnati Bengals",
+        "City": "Cincinnati",
+        "Venue": "Paycor Stadium",
+        "lat": "39.0954",
+        "lon": "-84.5160"
+    },
+    "86": {
+        "": "86",
+        "state": "Ohio",
+        "League": "MLB",
+        "Team": "Cleveland Guardians",
+        "City": "Cleveland",
+        "Venue": "Progressive Field",
+        "lat": "41.4958",
+        "lon": "-81.6853"
+    },
+    "87": {
+        "": "87",
+        "state": "Ohio",
+        "League": "NBA",
+        "Team": "Cleveland Cavaliers",
+        "City": "Cleveland",
+        "Venue": "Rocket Mortgage FieldHouse",
+        "lat": "41.4966",
+        "lon": "\u00a0-81.6884"
+    },
+    "88": {
+        "": "88",
+        "state": "Oklahoma",
+        "League": "NBA",
+        "Team": "Oklahoma City Thunder",
+        "City": "Oklahoma City",
+        "Venue": "Paycom Center",
+        "lat": "35.4636",
+        "lon": "-97.5156"
+    },
+    "89": {
+        "": "89",
+        "state": "Oregon",
+        "League": "NBA",
+        "Team": "Portland Trail Blazers",
+        "City": "Portland",
+        "Venue": "Moda Center",
+        "lat": "45.5316",
+        "lon": "-122.6672"
+    },
+    "90": {
+        "": "90",
+        "state": "Pennsylvania",
+        "League": "NFL",
+        "Team": "Pittsburgh Steelers",
+        "City": "Pittsburgh",
+        "Venue": "Acrisure Stadium",
+        "lat": "40.4467",
+        "lon": "-80.0158"
+    },
+    "91": {
+        "": "91",
+        "state": "Pennsylvania",
+        "League": "MLB",
+        "Team": "Philadelphia Phillies",
+        "City": "Philadelphia",
+        "Venue": "Citizens Bank Park",
+        "lat": "39.9058",
+        "lon": "-75.1664"
+    },
+    "92": {
+        "": "92",
+        "state": "Pennsylvania",
+        "League": "NFL",
+        "Team": "Philadelphia Eagles",
+        "City": "Philadelphia",
+        "Venue": "Lincoln Financial Field",
+        "lat": "39.9008",
+        "lon": "-75.1675"
+    },
+    "93": {
+        "": "93",
+        "state": "Pennsylvania",
+        "League": "MLB",
+        "Team": "Pittsburgh Pirates",
+        "City": "Pittsburgh",
+        "Venue": "PNC Park",
+        "lat": "40.4469",
+        "lon": "-80.0058"
+    },
+    "94": {
+        "": "94",
+        "state": "Pennsylvania",
+        "League": "NHL",
+        "Team": "Pittsburgh Penguins",
+        "City": "Pittsburgh",
+        "Venue": "PPG Paints Arena",
+        "lat": "40.4394",
+        "lon": "-79.9899"
+    },
+    "95": {
+        "": "95",
+        "state": "Pennsylvania",
+        "League": "NHL",
+        "Team": "Philadelphia Flyers",
+        "City": "Philadelphia",
+        "Venue": "Wells Fargo Center",
+        "lat": "\u00a039.9013",
+        "lon": "-75.1726"
+    },
+    "96": {
+        "": "96",
+        "state": "Pennsylvania",
+        "League": "NBA",
+        "Team": "Philadelphia 76ers",
+        "City": "Philadelphia",
+        "Venue": "Wells Fargo Center",
+        "lat": "\u00a039.9013",
+        "lon": "-75.1726"
+    },
+    "97": {
+        "": "97",
+        "state": "Tennessee",
+        "League": "NHL",
+        "Team": "Nashville Predators",
+        "City": "Nashville",
+        "Venue": "Bridgestone Arena",
+        "lat": "36.1592",
+        "lon": "-86.7791"
+    },
+    "98": {
+        "": "98",
+        "state": "Tennessee",
+        "League": "NBA",
+        "Team": "Memphis Grizzlies",
+        "City": "Memphis",
+        "Venue": "FedExForum",
+        "lat": "35.1384",
+        "lon": "-90.0510"
+    },
+    "99": {
+        "": "99",
+        "state": "Tennessee",
+        "League": "NFL",
+        "Team": "Tennessee Titans",
+        "City": "Nashville",
+        "Venue": "Nissan Stadium",
+        "lat": "36.1665",
+        "lon": "-86.7713"
+    },
+    "100": {
+        "": "100",
+        "state": "Texas",
+        "League": "NBA",
+        "Team": "Dallas Mavericks",
+        "City": "Dallas",
+        "Venue": "American Airlines Center",
+        "lat": "32.7906",
+        "lon": "-96.8103"
+    },
+    "101": {
+        "": "101",
+        "state": "Texas",
+        "League": "NHL",
+        "Team": "Dallas Stars",
+        "City": "Dallas",
+        "Venue": "American Airlines Center",
+        "lat": "32.7906",
+        "lon": "-96.8103"
+    },
+    "102": {
+        "": "102",
+        "state": "Texas",
+        "League": "NBA",
+        "Team": "San Antonio Spurs",
+        "City": "San Antonio",
+        "Venue": "AT&T Center",
+        "lat": "29.4269",
+        "lon": "-98.4376"
+    },
+    "103": {
+        "": "103",
+        "state": "Texas",
+        "League": "NFL",
+        "Team": "Dallas Cowboys",
+        "City": "Arlington",
+        "Venue": "AT&T Stadium",
+        "lat": "32.7478",
+        "lon": "-97.0928"
+    },
+    "104": {
+        "": "104",
+        "state": "Texas",
+        "League": "MLB",
+        "Team": "Texas Rangers",
+        "City": "Arlington",
+        "Venue": "Globe Life Field",
+        "lat": "32.7514",
+        "lon": "-97.0828"
+    },
+    "105": {
+        "": "105",
+        "state": "Texas",
+        "League": "MLB",
+        "Team": "Houston Astros",
+        "City": "Houston",
+        "Venue": "Minute Maid Park",
+        "lat": "29.7569",
+        "lon": "-95.3556"
+    },
+    "106": {
+        "": "106",
+        "state": "Texas",
+        "League": "NFL",
+        "Team": "Houston Texans",
+        "City": "Houston",
+        "Venue": "NRG Stadium",
+        "lat": "29.6848",
+        "lon": "-95.4110"
+    },
+    "107": {
+        "": "107",
+        "state": "Texas",
+        "League": "NBA",
+        "Team": "Houston Rockets",
+        "City": "Houston",
+        "Venue": "Toyota Center",
+        "lat": "29.7505",
+        "lon": "-95.3573"
+    },
+    "108": {
+        "": "108",
+        "state": "Utah",
+        "League": "NBA",
+        "Team": "Utah Jazz",
+        "City": "Salt Lake City",
+        "Venue": "Vivint Arena",
+        "lat": "40.7684",
+        "lon": "-111.9016"
+    },
+    "109": {
+        "": "109",
+        "state": "Washington",
+        "League": "NHL",
+        "Team": "Seattle Kraken",
+        "City": "Seattle",
+        "Venue": "Climate Pledge Arena",
+        "lat": "47.6220",
+        "lon": "-122.3540"
+    },
+    "110": {
+        "": "110",
+        "state": "Washington",
+        "League": "NFL",
+        "Team": "Seattle Seahawks",
+        "City": "Seattle",
+        "Venue": "Lumen Field",
+        "lat": "47.5952",
+        "lon": "-122.3316"
+    },
+    "111": {
+        "": "111",
+        "state": "Washington",
+        "League": "MLB",
+        "Team": "Seattle Mariners",
+        "City": "Seattle",
+        "Venue": "T-Mobile Park",
+        "lat": "47.5914",
+        "lon": "-122.3325"
+    },
+    "112": {
+        "": "112",
+        "state": "Wisconsin",
+        "League": "MLB",
+        "Team": "Milwaukee Brewers",
+        "City": "Milwaukee",
+        "Venue": "American Family Field",
+        "lat": "43.0283",
+        "lon": "-87.9711"
+    },
+    "113": {
+        "": "113",
+        "state": "Wisconsin",
+        "League": "NBA",
+        "Team": "Milwaukee Bucks",
+        "City": "Milwaukee",
+        "Venue": "Fiserv Forum",
+        "lat": "43.0452",
+        "lon": "-87.9179"
+    },
+    "114": {
+        "": "114",
+        "state": "Wisconsin",
+        "League": "NFL",
+        "Team": "Green Bay Packers",
+        "City": "Green Bay",
+        "Venue": "Lambeau Field",
+        "lat": "44.5014",
+        "lon": "-88.0622"
+    }
+}
