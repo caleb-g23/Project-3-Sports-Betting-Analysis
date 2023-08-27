@@ -65,8 +65,8 @@ fetch(link)
                         map.fitBounds(event.target.getBounds());
                     }
                 });
-                // set popup showing state name and Ways_to_bet 'tax_status'
-                layer.bindPopup("<h3>" + feature.properties.NAME + "</h3><h4>" + feature.properties.Ways_to_bet + "</h4>");
+                // set popup showing state name, Ways_to_bet, and date_legalized on separate lines
+                layer.bindPopup("<h3>" + feature.properties.NAME + "</h3><h4>" + feature.properties.Ways_to_bet + "</h4><p><strong>Legalized:</strong> " + feature.properties.date_legalized + "</p>");
             }
 
 
