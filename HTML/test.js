@@ -65,16 +65,13 @@ fetch(link)
                         map.fitBounds(event.target.getBounds());
                     }
                 });
-                // set popup showing state name, Ways_to_bet, and date_legalized on separate lines
-                layer.bindPopup("<h3>" + feature.properties.NAME + "</h3><h4>" + feature.properties.Ways_to_bet + "</h4><p><strong>Legalized:</strong> " + feature.properties.date_legalized + "</p>");
+                // set popup showing state name and Ways_to_bet and legalized date: 
+                layer.bindPopup(`<h1>${feature.properties.NAME}</h1> <hr> <h2>${feature.properties.Ways_to_bet}</h2> <hr> <h2>${feature.properties.year_legalized}</h2>`);
             }
 
 
         }).addTo(map);
     });
-
-
-
 
 
 
