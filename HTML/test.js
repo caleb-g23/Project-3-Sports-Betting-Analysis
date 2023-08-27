@@ -85,6 +85,67 @@ fetch(link)
 
 //____________________Graps_____VICKY__________________________________________________
 
+
+//fetch data from ../json/stateboundry_betting_info_added.json and prepare a pie chart with tax_status
+d3.json("../json/stateboundry_betting_info_added.json").then(function(data) {
+    console.log(data);
+
+    // Convert object to an array of features
+    var features = data.features;
+
+    // Function to update the pie chart based on the selected year
+    function updatePieChart(selectedYear) {
+        // Prepare data for pie chart
+        var taxStatusCounts = {
+            "YES": 0, // Custom label for "Yes"
+            "NO": 0 // Custom label for "No"
+        };
+
+        // Loop through the features and count tax statuses
+        features.forEach(function(feature) {
+            var yearLegalized = parseInt(feature.properties.year_legalized);
+            if (selectedYear === 0 || yearLegalized === selectedYear) {
+                var tax = feature.properties.tax_status;
+                if (tax === "Yes") {
+                    taxStatusCounts["YES"] += 1;
+                } else if (tax === "No") {
+                    taxStatusCounts["NO"] += 1;
+                }
+            }
+        });
+
+        // Extract tax status labels and counts for plotting
+        var taxStatusLabels = Object.keys(taxStatusCounts);
+        var taxStatusValues = Object.values(taxStatusCounts);
+
+        // Create pie chart data
+        var pieChartData = [{
+            values: taxStatusValues,
+            labels: taxStatusLabels,
+            type: "pie"
+        }];
+
+        var pieChartLayout = {
+            title: "States Taxing Income from Sports Betting",
+            height: 500,
+            width: 500
+        };
+
+        Plotly.newPlot("pie-chart", pieChartData, pieChartLayout); // Make sure to target the correct element ID here
+    }
+
+    // Initial update based on selected year
+    const selectedYear = parseInt(document.getElementById('yearSelect').value);
+    updatePieChart(selectedYear);
+
+    // Add event listener to the year dropdown
+    document.getElementById('yearSelect').addEventListener('change', function () {
+        const selectedYear = parseInt(this.value);
+        updatePieChart(selectedYear);
+    });
+});
+
+
 // fetch data from json "../json/national_market.json" and prepare a line graph with sum of revenue for each year
 d3.json("../json/national_market.json").then(function(data) {
     console.log(data);
@@ -132,7 +193,7 @@ d3.json("../json/national_market.json").then(function(data) {
 
     var data = [trace1, trace2];
     var layout = {
-        title: "Total Revenue and Taxes from Sports Betting in the United States by Year",
+        title: "Total Revenue and Taxes from Sports Betting",
         xaxis: { title: "Year" },
         yaxis: { title: "Amount (in millions)" },
         legend: { x: 0, y: 1 }
