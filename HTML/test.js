@@ -46,7 +46,30 @@ fetch(link)
                     color: 'white',
                     fillOpacity: 0.7
                 };
+            }, 
+            onEachFeature: function (feature, layer) {
+                layer.on({
+                    mouseover: function (event) {
+                        layer = event.target;
+                        layer.setStyle({
+                            fillOpacity: 0.9
+                        });
+                    },
+                    mouseout: function (event) {
+                        layer = event.target;
+                        layer.setStyle({
+                            fillOpacity: 0.7
+                        });
+                    },
+                    click: function (event) {
+                        map.fitBounds(event.target.getBounds());
+                    }
+                });
+                // set popup showing state name and Ways_to_bet 'tax_status'
+                layer.bindPopup("<h3>" + feature.properties.NAME + "</h3><h4>" + feature.properties.Ways_to_bet + "</h4>");
             }
+
+
         }).addTo(map);
     });
 
