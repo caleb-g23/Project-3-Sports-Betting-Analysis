@@ -26,11 +26,11 @@ let link = "../json/stateboundry_betting_info_added.json";
 
 // The function that will determine the color of a state based on its Ways_to_bet
 function chooseColor(Ways_to_bet) {
-    if (Ways_to_bet == "Online & In-Person") return "green";
-    else if (Ways_to_bet == "In Person Only") return "purple";
-    else if (Ways_to_bet == "Online Only") return "purple";
-    else if (Ways_to_bet == "Pending") return "yellow";
-    return "grey";
+    if (Ways_to_bet == "Online & In-Person") return "#0570E5"; // Dark Blue
+    else if (Ways_to_bet == "In Person Only") return "#001F3F"; // Navy Blue
+    else if (Ways_to_bet == "Online Only") return "#3498DB"; // Light Blue
+    else if (Ways_to_bet == "Pending") return "#F39C12"; // Yellow
+    return "#BDC3C7"; // Grey
 }
 
 // Fetch the GeoJSON data and add it to the map with custom colors
@@ -66,15 +66,10 @@ fetch(link)
                     }
                 });
                 // set popup showing state name and Ways_to_bet and legalized date: 
-                layer.bindPopup("<h1>" + feature.properties.NAME + "</h1> <hr> <h2>" + feature.properties.Ways_to_bet + "</h2> <hr> <h2>" + feature.properties.date_legalized + "</h2>");
+                layer.bindPopup("<h1>" + feature.properties.NAME + "</h1> <hr> <h2>Ways to bet: " + feature.properties.Ways_to_bet + "</h2> <hr> <h2>Legalized in: " + feature.properties.date_legalized + "</h2>");
             }
-
-
         }).addTo(map);
     });
-
-
-
 
 
 
