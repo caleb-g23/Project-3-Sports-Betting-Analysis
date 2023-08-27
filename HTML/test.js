@@ -66,7 +66,7 @@ fetch(link)
                     }
                 });
                 // set popup showing state name and Ways_to_bet and legalized date: 
-                layer.bindPopup(`<h1>${feature.properties.NAME}</h1> <hr> <h2>${feature.properties.Ways_to_bet}</h2> <hr> <h2>${feature.properties.year_legalized}</h2>`);
+                layer.bindPopup("<h1>" + feature.properties.NAME + "</h1> <hr> <h2>" + feature.properties.Ways_to_bet + "</h2> <hr> <h2>" + feature.properties.date_legalized + "</h2>");
             }
 
 
