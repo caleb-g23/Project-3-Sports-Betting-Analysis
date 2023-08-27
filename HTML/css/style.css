@@ -71,13 +71,6 @@ body {
     cursor: pointer;   
     line-height: 40px;  
 }
-#hotels, #beaches, #restaurants, #destinations, #things {    
-    text-align: center;    
-    align-items: center;
-    justify-content: center;
-    display: table-cell;
-    color: #8807d2;
-}
 .main-container {    
     display: grid;    
 /*     grid-template-columns: 42% 28% 30%; */
@@ -89,10 +82,6 @@ body {
 #islot {
     list-style-type: none;
     padding-inline-start: 5px;
-}
-#pics {    
-    width: 550px;
-    height: 400x;
 }
 #rankName {
     width: 550px;
@@ -106,16 +95,6 @@ body {
 /*     height: 400px; */
     padding-inline-start: 1px;
 }
-#myMap {
-    top: 10%;
-    width: 800px;
-    height: 600px;
-    vertical-align: top;
-    display: inline-block;
-    position: fixed;
-    padding-inline-start: 2px;
-}
-
 .custom-marker {
     background-color: #1e9176;
     border-radius: 50%;

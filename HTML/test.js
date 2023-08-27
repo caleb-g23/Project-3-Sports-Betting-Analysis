@@ -6,11 +6,19 @@ const jsonFiles = [
     { name: "State Total Data", url: "../json/stateboundry_betting_info_added.json" }
 ];
 
-// Create a dropdown for selecting JSON files
-const dropdown = d3.select("#selJson");
+// Create a dropdown for selecting feature.properties.date_legalized from stateboundry_betting_info_added.json 
+
+// Select the dropdown element in the HTML page
+const dropdown = d3.select("#selDataset");
+
+// Add the options to the dropdown list
 jsonFiles.forEach(function (jsonFile) {
-    dropdown.append("option").text(jsonFile.name).attr("value", jsonFile.url);
+    dropdown.append("option").text(jsonFile.name).property("value", jsonFile.url);
 });
+
+
+
+
 
 // Initialize Leaflet map
 const map = L.map('map').setView([37.0902, -95.7129], 4);
@@ -18,7 +26,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-//______________________________________VICKY___________________
+//______________________________________VICKY_____MAP__________
 
 //use json with state boundries from  https://eric.clst.org/tech/usgeojson/
 
@@ -71,6 +79,7 @@ fetch(link)
         }).addTo(map);
     });
 
+//____________________Graps_______________________________________________________
 
 
 
