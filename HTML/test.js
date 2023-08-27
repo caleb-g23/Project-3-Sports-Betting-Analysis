@@ -16,10 +16,6 @@ jsonFiles.forEach(function (jsonFile) {
     dropdown.append("option").text(jsonFile.name).property("value", jsonFile.url);
 });
 
-
-
-
-
 // Initialize Leaflet map
 const map = L.map('map').setView([37.0902, -95.7129], 4);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -96,36 +92,50 @@ d3.json("../json/national_market.json").then(function(data) {
     // Convert object to an array of values
     var dataArray = Object.values(data);
 
-    // Prepare data for summing revenue by year
+    // Prepare data for summing revenue and taxes by year
     var revenueByYear = {};
+    var taxesByYear = {};
 
-    // Loop through the data and sum revenue by year
+    // Loop through the data and sum revenue and taxes by year
     dataArray.forEach(function(d) {
         var year = new Date(d.month).getFullYear();
         var revenue = parseFloat(d.revenue.replace(/[\$,]/g, '')); // Convert revenue to a number
+        var taxes = parseFloat(d.taxes.replace(/[\$,]/g, '')); // Convert taxes to a number
         if (!revenueByYear[year]) {
             revenueByYear[year] = revenue;
+            taxesByYear[year] = taxes;
         } else {
             revenueByYear[year] += revenue;
+            taxesByYear[year] += taxes;
         }
     });
 
-    // Extract years and revenue for plotting
+    // Extract years, revenue, and taxes for plotting
     var years = Object.keys(revenueByYear);
     var revenue = Object.values(revenueByYear);
+    var taxes = Object.values(taxesByYear);
 
-    // Create a line graph
+    // Create line graphs for revenue and taxes
     var trace1 = {
         x: years,
         y: revenue,
-        type: "line"
+        mode: "lines",
+        name: "Total Revenue"
     };
 
-    var data = [trace1];
+    var trace2 = {
+        x: years,
+        y: taxes,
+        mode: "lines",
+        name: "Taxes"
+    };
+
+    var data = [trace1, trace2];
     var layout = {
-        title: "Total Revenue from Sports Betting in the United States by Year",
+        title: "Total Revenue and Taxes from Sports Betting in the United States by Year",
         xaxis: { title: "Year" },
-        yaxis: { title: "Total Revenue (in millions)" }
+        yaxis: { title: "Amount (in millions)" },
+        legend: { x: 0, y: 1 }
     };
 
     Plotly.newPlot("line-graph", data, layout); // Make sure to target the correct element ID here
