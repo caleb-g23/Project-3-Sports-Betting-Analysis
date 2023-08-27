@@ -162,3 +162,14 @@ body {
 .legend-text {
     font-size: 14px;
 }
+#line-graph-container {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    margin-left: 10px;
+    background-color: #f9f9f9; /* Add a light background color to the line graph container */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 5px; /* Add some rounded corners */
+    padding: 20px; /* Add some padding for content spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
