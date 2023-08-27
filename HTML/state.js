@@ -1,95 +1,86 @@
-var stateMarket = [];
-var nationalMarket = [];
-var stateBoundaries = [];
-var stateTotal = [];
+const stateDropdown = document.getElementById('stateDropdown');
+const stateDataContainer = document.getElementById('stateData');
+const jsonDataUrl = 'https://raw.githubusercontent.com/caleb-g23/Project-3-Sports-Betting-Analysis/d5fe22317fe524433683792b672c09c2504c23a8/json/state_total_data.json';
 
-// select unordered list id
-let menuLnk = d3.select("#ulmenu")
+// Fetch JSON data from the provided URL
+fetch(jsonDataUrl)
+    .then(response => response.json())
+    .then(data => {
+        // Populate the dropdown with state options
+        Object.values(data).forEach(item => {
+            const stateOption = document.createElement('option');
+            stateOption.value = item.state;
+            stateOption.textContent = item.state;
+            stateDropdown.appendChild(stateOption);
+        });
 
-// function to handle click event of menu list
-function handleClick() {
-    
-    targetId = d3.event.target.id;
-    let dataSet = [];
+        // Event listener for state selection
+        stateDropdown.addEventListener('change', () => {
+            const selectedState = stateDropdown.value;
+            const stateInfo = Object.values(data).find(item => item.state === selectedState);
 
-    if (targetId == 'legal') {
-       dataSet = stateMarket;        
-    }
-    else if (targetId == 'Revenue') {
-        dataSet = nationalMarket;
-    }
-    else if (targetId == 'Taxes') {
-        dataSet = restaurantInfo;
-    }    
-    else if (targetId == 'things') {
-        dataSet = thingsInfo;
-    }
-    
-
-    buildImageSection(dataSet);
-    //buildChartSection(dataSet);
-    //buildMapSection(dataSet);
-    
-}
-
-// Event handler for click of menu list items
-menuLnk.on('click', handleClick);
-    
-
-// function to build Section 1 - images, name and description
-function buildImageSection(catData) {
-    
-    // Populate image section
-    let unpicList = d3.select('#islot');
-    // Remove all links under the id (populated from earlier views)
-    d3.select('#islot').selectAll("li").remove();
-    d3.select('#islot').selectAll("h3").remove();
-    d3.select('#islot').selectAll("p").remove();
-
-    // loop thru category dataset and add list items with images
-    for (i=0; i < catData.length; i++) {
+            // Display state information
+            if (stateInfo) {
+                stateDataContainer.innerHTML = `
+                    <p>State: ${stateInfo.state}</p>
+                    <p>Handle: ${stateInfo.handle}</p>
+                    <p>Revenue: ${stateInfo.revenue}</p>
+                    <p>Hold: ${stateInfo.hold}</p>
+                    <p>Taxes: ${stateInfo.taxes}</p>
+                    <p>Population 18+: ${stateInfo['population total 18+']}</p>
+                    <p>Revenue Per Person: ${stateInfo['Revenue Per Person']}</p>
+                `;
         
-        let rankName = "";
-        if ((catData[i].name == "") || (catData[i].location == catData[i].name)) {
-            rankName = catData[i].rank.toString().concat(". ").concat(catData[i].location)
-        }
-        else {
-            rankName = catData[i].rank.toString().concat(". ").concat(catData[i].name).concat(" ").concat(catData[i].location)
-        }
-
-        unpicList.append('li').append('img').attr("id", "pics").attr("src", catData[i].imageurl).attr('alt', 'Not Available')
-        unpicList.append('h3').attr("id", "rankName").text(rankName)
-        unpicList.append('p').attr("id", "imgDesc").text(catData[i].description)
-    }
-}
-
-
-
-
-function init() {
-
-    // read json files and store in variables for use later
-    // Note: for very large datasets storing is not adviseable - read and populate when required
-    d3.json("json/all_state_market.json").then(function(data) {
-        stateMarket = data;        
+               
+                // Update or create the bar chart
+                if (chart) {
+                    chart.data.labels = ['Handle', 'Revenue', 'Taxes'];
+                    chart.data.datasets[0].label = selectedState;
+                    chart.data.datasets[0].data = [
+                        parseFloat(stateInfo.handle.replace('$', '').replace(',', '')),
+                        parseFloat(stateInfo.revenue.replace('$', '').replace(',', '')),
+                        parseFloat(stateInfo.taxes.replace('$', '').replace(',', ''))
+                    ];
+                    chart.update();
+                } else {
+                    const ctx = document.getElementById('barChart').getContext('2d');
+                    chart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Handle', 'Revenue', 'Taxes'],
+                            datasets: [{
+                                label: selectedState,
+                                data: [
+                                    parseFloat(stateInfo.handle.replace('$', '').replace(',', '')),
+                                    parseFloat(stateInfo.revenue.replace('$', '').replace(',', '')),
+                                    parseFloat(stateInfo.taxes.replace('$', '').replace(',', ''))
+                                ],
+                                backgroundColor: ['rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(75, 192, 192, 0.6)'],
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    title: {
+                                        display: true,
+                                        text: 'Amount ($)'
+                                    }
+                                },
+                                x: {
+                                    title: {
+                                        display: true,
+                                        text: 'Categories'
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+            } else {
+                stateDataContainer.innerHTML = '<p>Select a state to view information.</p>';
+            }
+        });
     })
-
-    d3.json("json/national_market.json").then(function(data) {
-        nationalMarket = data;        
-    })
-
-    d3.json("json/state_boundaries.json").then(function(data) {
-        stateBoundaries = data;        
-    })
-
-    d3.json("json/state_total_data.json").then(function(data) {
-        restaurantInfo = data;        
-    })
-
-    d3.json("static/data/destinations.json").then(function(data) {
-        destinationInfo = data;        
-    })    
-    
-};
-
-init();
+    .catch(error => console.error('Error fetching data:', error));
