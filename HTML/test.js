@@ -45,16 +45,20 @@ function chooseColor(Ways_to_bet) {
 fetch(link)
     .then(response => response.json())
     .then(data => {
-        L.geoJSON(data, {
+        const geoJsonLayer = L.geoJSON(data, {
             style: function (feature) {
                 return {
                     fillColor: chooseColor(feature.properties.Ways_to_bet),
                     weight: 2,
                     opacity: 1,
                     color: 'white',
-                    fillOpacity: 0.7
+                    fillOpacity: 0.5
                 };
-            }, 
+            },
+            filter: function (feature) {
+                const selectedYear = parseInt(document.getElementById('yearSelect').value);
+                return selectedYear === 0 || feature.properties.year_legalized == selectedYear;
+            },
             onEachFeature: function (feature, layer) {
                 layer.on({
                     mouseover: function (event) {
@@ -77,11 +81,89 @@ fetch(link)
                 layer.bindPopup("<h1>" + feature.properties.NAME + "</h1> <hr> <h2>Ways to bet: " + feature.properties.Ways_to_bet + "</h2> <hr> <h2>Legalized in: " + feature.properties.date_legalized + "</h2>");
             }
         }).addTo(map);
+        document.getElementById('yearSelect').addEventListener('change', function () {
+            geoJsonLayer.clearLayers();
+            geoJsonLayer.addData(data);
+        });
     });
 
 //____________________Graps_______________________________________________________
 
+d3.json("../json/national_market.json").then(function(data) {
+    // Convert the data into an array of objects
+    const dataArray = Object.values(data);
 
+    // Parse dates and remove dollar signs and commas
+    const parseTime = d3.timeParse("%Y-%m-%d");
+    dataArray.forEach(function(d) {
+        d.month = parseTime(d.month);
+        d.revenue = parseFloat(d.revenue.replace(/[\$,]/g, ''));
+        d.taxes = parseFloat(d.taxes.replace(/[\$,]/g, ''));
+    });
+
+    // Group data by year and calculate sums
+    const dataByYear = d3.nest()
+        .key(function(d) { return d.month.getFullYear(); })
+        .rollup(function(v) { return {
+            revenue: d3.sum(v, function(d) { return d.revenue; }),
+            taxes: d3.sum(v, function(d) { return d.taxes; })
+        }; })
+        .entries(dataArray);
+
+    // Set up dimensions for the graph
+    const margin = {top: 20, right: 30, bottom: 30, left: 40};
+    const width = 800 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
+
+    // Create SVG element
+    const svg = d3.select("#line-graph")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Define scales for x and y axes
+    const x = d3.scaleTime()
+        .domain(d3.extent(dataArray, function(d) { return d.month; }))
+        .range([0, width]);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(dataByYear, function(d) { return Math.max(d.value.revenue, d.value.taxes); })])
+        .nice()
+        .range([height, 0]);
+
+    // Define line functions
+    const lineRevenue = d3.line()
+        .x(function(d) { return x(d.key); })
+        .y(function(d) { return y(d.value.revenue); });
+
+    const lineTaxes = d3.line()
+        .x(function(d) { return x(d.key); })
+        .y(function(d) { return y(d.value.taxes); });
+
+    // Append x and y axes
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+    // Append revenue line
+    svg.append("path")
+        .data([dataByYear])
+        .attr("class", "line")
+        .style("stroke", "blue")
+        .attr("d", lineRevenue);
+
+    // Append taxes line
+    svg.append("path")
+        .data([dataByYear])
+        .attr("class", "line")
+        .style("stroke", "green")
+        .attr("d", lineTaxes);
+});
 
 
 
