@@ -103,53 +103,48 @@
     </div>
 
     <script>
-        // JavaScript logic - switching between pages and initializing page content
-
-        const nationalPage = document.getElementById('national-page');
-        const statePage = document.getElementById('state-page');
-        const nationalDataButton = document.getElementById('national-data-button');
-        const stateDataButton = document.getElementById('state-data-button');
-
-        function showNationalPage() {
-            nationalPage.style.display = 'block';
-            statePage.style.display = 'none';
-        }
-
-        function showStatePage() {
-            statePage.style.display = 'block';
-            nationalPage.style.display = 'none';
-        }
-
-        function handleNavigation(event) {
-            const targetPage = event.state.page;
-            if (targetPage === 'national') {
-                showNationalPage();
-            } else if (targetPage === 'state') {
-                showStatePage();
-            }
-        }
-
-        nationalDataButton.addEventListener('click', () => {
-            showNationalPage();
-            history.pushState({ page: 'national' }, 'National Data', '/national');
-        });
-
-        stateDataButton.addEventListener('click', () => {
-            showStatePage();
-            history.pushState({ page: 'state' }, 'State Data', '/state');
-        });
-
-        window.addEventListener('popstate', handleNavigation);
-
-        // Initial page load
-        if (window.location.pathname === '/national') {
-            showNationalPage();
-        } else if (window.location.pathname === '/state') {
-            showStatePage();
-        } else {
-            
-        }
-    </script>
+      // JavaScript logic - switching between pages and initializing page content
+  
+      const nationalPage = document.getElementById('national-page');
+      const statePage = document.getElementById('state-page');
+      const nationalDataButton = document.getElementById('national-data-button');
+      const stateDataButton = document.getElementById('state-data-button');
+  
+      function showNationalPage() {
+          nationalPage.style.display = 'block';
+          statePage.style.display = 'none';
+      }
+  
+      function showStatePage() {
+          statePage.style.display = 'block';
+          nationalPage.style.display = 'none';
+      }
+  
+      function handleNavigation(event) {
+          const targetPage = event.state.page;
+          if (targetPage === 'national') {
+              showNationalPage();
+          } else if (targetPage === 'state') {
+              showStatePage();
+          }
+      }
+  
+      nationalDataButton.addEventListener('click', () => {
+          showNationalPage();
+          history.pushState({ page: 'national' }, 'National Data', '/national');
+      });
+  
+      stateDataButton.addEventListener('click', () => {
+          showStatePage();
+          history.pushState({ page: 'state' }, 'State Data', '/state');
+      });
+  
+      window.addEventListener('popstate', handleNavigation);
+  
+      // Initial page load
+      // Only show the national page on initialization
+      showNationalPage();
+  </script>
 
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
