@@ -63,6 +63,8 @@ body {
     border-radius: 0px;
   }
   
+/* MAP legend */
+
   .legend {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -93,3 +95,23 @@ body {
   .legend-text {
     flex: 1;
   }
+
+  /* MAP Popup content styles */
+.popup-content {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.popup-content h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.popup-details {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.popup-details p {
+    margin: 5px 0;
+}

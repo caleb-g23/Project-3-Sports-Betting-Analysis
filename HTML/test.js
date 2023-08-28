@@ -6,6 +6,10 @@ const jsonFiles = [
     { name: "State Total Data", url: "../json/stateboundry_betting_info_added.json" }
 ];
 
+
+///-------------------VICKY------------------ NATIONAL DATA PAGE -----------------------------
+
+
 // Create a dropdown for selecting feature.properties.date_legalized from stateboundry_betting_info_added.json 
 
 // Select the dropdown element in the HTML page
@@ -58,13 +62,11 @@ fetch(link)
             onEachFeature: function (feature, layer) {
                 layer.on({
                     mouseover: function (event) {
-                        layer = event.target;
                         layer.setStyle({
                             fillOpacity: 0.9
                         });
                     },
                     mouseout: function (event) {
-                        layer = event.target;
                         layer.setStyle({
                             fillOpacity: 0.7
                         });
@@ -73,10 +75,22 @@ fetch(link)
                         map.fitBounds(event.target.getBounds());
                     }
                 });
-                // set popup showing state name and Ways_to_bet and legalized date: 
-                layer.bindPopup("<h1>" + feature.properties.NAME + "</h1> <hr> <h2>Ways to bet: " + feature.properties.Ways_to_bet + "</h2> <hr> <h2>Legalized in: " + feature.properties.date_legalized + "</h2>");
+
+                // Create custom popup content
+                const popupContent =
+                    "<div class='popup-content'>" +
+                    "<h1>" + feature.properties.NAME + "</h1>" +
+                    "<div class='popup-details'>" +
+                    "<p><strong>Ways to bet:</strong> " + feature.properties.Ways_to_bet + "</p>" +
+                    "<p><strong>Legalized in:</strong> " + feature.properties.date_legalized + "</p>" +
+                    "</div>" +
+                    "</div>";
+
+                // Bind popup with custom content
+                layer.bindPopup(popupContent);
             }
         }).addTo(map);
+
         document.getElementById('yearSelect').addEventListener('change', function () {
             geoJsonLayer.clearLayers();
             geoJsonLayer.addData(data);
@@ -237,3 +251,6 @@ stateSearch.addEventListener('input', () => {
 
 // Initial population
 populateStates();
+
+
+///------------------Caleb & Ryan------------------ State DATA PAGE -----------------------------
