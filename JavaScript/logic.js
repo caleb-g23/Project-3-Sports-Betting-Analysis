@@ -216,7 +216,7 @@ d3.json("../json/national_market.json").then(function(data) {
     Plotly.newPlot("line-graph", data, layout); // Make sure to target the correct element ID here
 });
 
-// -- STATE TOGGLE on the State Data Page
+// ----------------- STATE TOGGLE on the State Data Page
 
 const stateSelect = document.getElementById('stateSelect');
 const stateSearch = document.getElementById('stateSearch');
@@ -254,3 +254,4 @@ populateStates();
 
 
 ///------------------Caleb & Ryan------------------ State DATA PAGE -----------------------------
+
