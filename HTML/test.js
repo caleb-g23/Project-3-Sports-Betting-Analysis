@@ -85,7 +85,7 @@ fetch(link)
 
 //____________________Graphs_____VICKY__________________________________________________
 
-
+// TOTAL REVENUE & TAXES -- LINE GRAPH
 //fetch data from ../json/stateboundry_betting_info_added.json and prepare a pie chart with tax_status
 d3.json("../json/stateboundry_betting_info_added.json").then(function(data) {
     console.log(data);
@@ -145,7 +145,7 @@ d3.json("../json/stateboundry_betting_info_added.json").then(function(data) {
     });
 });
 
-
+// INCOME TAXATION -- PIE CHART
 // fetch data from json "../json/national_market.json" and prepare a line graph with sum of revenue for each year
 d3.json("../json/national_market.json").then(function(data) {
     console.log(data);
@@ -202,7 +202,7 @@ d3.json("../json/national_market.json").then(function(data) {
     Plotly.newPlot("line-graph", data, layout); // Make sure to target the correct element ID here
 });
 
-//state toggle on the Stat Data Page
+// -- STATE TOGGLE on the State Data Page
 
 const stateSelect = document.getElementById('stateSelect');
 const stateSearch = document.getElementById('stateSearch');
