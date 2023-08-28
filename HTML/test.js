@@ -83,7 +83,7 @@ fetch(link)
         });
     });
 
-//____________________Graps_____VICKY__________________________________________________
+//____________________Graphs_____VICKY__________________________________________________
 
 
 //fetch data from ../json/stateboundry_betting_info_added.json and prepare a pie chart with tax_status
@@ -201,3 +201,39 @@ d3.json("../json/national_market.json").then(function(data) {
 
     Plotly.newPlot("line-graph", data, layout); // Make sure to target the correct element ID here
 });
+
+//state toggle on the Stat Data Page
+
+const stateSelect = document.getElementById('stateSelect');
+const stateSearch = document.getElementById('stateSearch');
+
+// List of USA states
+const states = [
+    'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
+    'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
+    'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri',
+    'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina',
+    'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota',
+    'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+];
+
+// Populate the select options with states
+function populateStates(searchTerm = '') {
+    stateSelect.innerHTML = '';
+    const filteredStates = states.filter(state => state.toLowerCase().includes(searchTerm.toLowerCase()));
+    
+    filteredStates.forEach(state => {
+        const option = document.createElement('option');
+        option.value = state;
+        option.textContent = state;
+        stateSelect.appendChild(option);
+    });
+}
+
+// Handle search input changes
+stateSearch.addEventListener('input', () => {
+    populateStates(stateSearch.value);
+});
+
+// Initial population
+populateStates();
