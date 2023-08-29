@@ -30,7 +30,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 //use json with state boundries from  https://eric.clst.org/tech/usgeojson/
 
-let link = "../json/stateboundry_betting_info_added.json";
+let link = "https://vickyl86.github.io/Project-3-Sports-Betting-Analysis/json/stateboundry_betting_info_added.json";
 
 // The function that will determine the color of a state based on its Ways_to_bet
 function chooseColor(Ways_to_bet) {
