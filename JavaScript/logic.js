@@ -102,7 +102,6 @@ fetch(link)
 // TOTAL REVENUE & TAXES -- LINE GRAPH
 //fetch data from ../json/stateboundry_betting_info_added.json and prepare a pie chart with tax_status
 d3.json("../json/stateboundry_betting_info_added.json").then(function(data) {
-    console.log(data);
 
     // Convert object to an array of features
     var features = data.features;
@@ -236,16 +235,16 @@ function populateStates(searchTerm = '') {
     stateSelect.innerHTML = '';
     const filteredStates = states.filter(state => state.toLowerCase().includes(searchTerm.toLowerCase()));
     
-    filteredStates.forEach(state => {
+    filteredStates.forEach((state, index) => {
         const option = document.createElement('option');
-        option.value = state;
+        option.value = index;
         option.textContent = state;
         stateSelect.appendChild(option);
     });
 }
 
 // Handle search input changes
-stateSearch.addEventListener('input', () => {
+stateSearch.addEventListener('input', (e) => {
     populateStates(stateSearch.value);
 });
 
@@ -259,12 +258,15 @@ const total= "../json/state_total_data.json"
 const monthly="../json/all_state_market.json"
 
 // Function that populates state info
+let stateTotalData;
 function buildStateInfo(state) {
     //Fetch JSON data and print to console
     d3.json(total).then(function(data){
         console.log(data);
 
-     total.forEach((state)=> {
+        stateTotalData = data
+
+     stateTotalData.forEach((state)=> {
         console.log('State: ' + state.state);
         console.log('Handle: ' + state.handle);
         console.log('Revenue: ' + state.revenue);
@@ -281,23 +283,26 @@ let revenueChart;
 // data structure
 const data = [total];
 
-// Populate the dropdown with state options
-data.forEach((item, index) => {
-    const option = document.createElement('option');
-    option.value = index;
-    option.text = item.state;
-    stateDropdown.appendChild(option);
-});
-
-// Initialize chart with default state
-updateChart(data[0]);
-
-// Dropdown change event handler
-stateDropdown.addEventListener('change', event => {
-    const selectedIndex = parseInt(event.target.value);
-    const selectedData = data[selectedIndex];
-    updateChart(selectedData);
-});
+d3.json(total).then(dataRes => {
+    let data = Object.values(dataRes)
+    // Populate the dropdown with state options
+    data.forEach((item, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.innerText = item.state;
+        stateDropdown.appendChild(option);
+    });
+    
+    // Initialize chart with default state
+    updateChart(data[0]);
+    
+    // Dropdown change event handler
+    stateDropdown.addEventListener('change', event => {
+        const selectedIndex = parseInt(event.target.value);
+        const selectedData = data[selectedIndex];
+        updateChart(selectedData);
+    });
+})
 
 // Function to update the chart based on selected data
 function updateChart(data) {
@@ -305,34 +310,52 @@ function updateChart(data) {
         revenueChart.destroy();
     }
 
-    const ctx = chartCanvas.getContext('2d');
-    revenueChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Revenue', 'Taxes', 'Handle'],
-            datasets: [{
-                label: 'Amount ($)',
-                data: [data.revenue, data.taxes, data.handle],
-                backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'Amount ($)'
-                    }
-                },
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Categories'
+    let {revenue, taxes, handle} = data
+    console.log(revenue, taxes, handle)
+
+    try {
+        // these values are too large to parse correctly
+        revenue = revenue.slice(1)
+        revenue = parseInt(revenue)
+
+        taxes = taxes.slice(1)
+        taxes = parseInt(taxes)
+
+        handle = handle.slice(1)
+        handle = parseInt(handle)
+
+        const ctx = chartCanvas.getContext('2d');
+        revenueChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Revenue', 'Taxes', 'Handle'],
+                datasets: [{
+                    label: 'Amount ($)',
+                    data: [revenue, taxes, handle],
+                    backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Amount ($)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Categories'
+                        }
                     }
                 }
             }
-        }
-    });
+        });
+    } catch {
+        console.log('could not convert to bigint')
+    }
+
 }
