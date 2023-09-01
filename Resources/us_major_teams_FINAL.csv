@@ -1,0 +1,116 @@
+,state,League,Team,City,Venue,lat,lon
+0,Arizona,MLB,Arizona Diamondbacks,Phoenix,Chase Field,33.4453,-112.0669
+1,Arizona,NBA,Phoenix Suns,Phoenix,Footprint Center, 33.4459,-112.0715
+2,Arizona,NHL,Arizona Coyotes,Tempe,Mullett Arena,33.4267,-111.9286
+3,Arizona,NFL,Arizona Cardinals,Glendale,State Farm Stadium,33.5277,-112.2626
+4,California,MLB,Los Angeles Angels,Anaheim,Angel Stadium,33.8003,-117.8828
+5,California,NBA,Golden State Warriors,San Francisco,Chase Center,37.7680,-122.3878
+6,California,NHL,Los Angeles Kings,Los Angeles,Crypto.com Arena,34.0430,-118.2673
+7,California,NBA,Los Angeles Clippers,Los Angeles,Crypto.com Arena,34.0430,-118.2673
+8,California,NBA,Los Angeles Lakers,Los Angeles,Crypto.com Arena,34.0430,-118.2673
+9,California,MLB,Los Angeles Dodgers,Los Angeles,Dodger Stadium,34.0736,-118.2400
+10,California,NBA,Sacramento Kings,Sacramento,Golden 1 Center,38.5802,-121.4997
+11,California,NHL,Anaheim Ducks,Anaheim,Honda Center,33.8047,-117.8727
+12,California,NFL,San Francisco 49ers,Santa Clara,Levi's Stadium,37.4030,-121.9700
+13,California,MLB,Oakland Athletics,Oakland,Oakland Coliseum,37.7517,-122.2006
+14,California,MLB,San Francisco Giants,San Francisco,Oracle Park,37.7783,-122.3894
+15,California,MLB,San Diego Padres,San Diego,Petco Park,32.7073,-117.1566
+16,California,NHL,San Jose Sharks,San Jose,SAP Center at San Jose,37.3263,37.3263
+17,California,NFL,Los Angeles Chargers,Inglewood,SoFi Stadium,33.9530,-118.3390
+18,California,NFL,Los Angeles Rams,Inglewood,SoFi Stadium,33.9530,-118.3390
+19,Colorado,NBA,Denver Nuggets,Denver,Ball Arena,39.7489,-105.0084
+20,Colorado,NHL,Colorado Avalanche,Denver,Ball Arena,39.7489,-105.0084
+21,Colorado,MLB,Colorado Rockies,Denver,Coors Field,39.7561,-104.9942
+22,Colorado,NFL,Denver Broncos,Denver,Empower Field at Mile High,39.7439,-105.0200
+23,District of Columbia,NHL,Washington Capitals,Washington,Capital One Arena,38.8981,-77.0212
+24,District of Columbia,NBA,Washington Wizards,Washington,Capital One Arena,38.8981,-77.0212
+25,District of Columbia,MLB,Washington Nationals,Washington,Nationals Park,38.8728,-77.0075
+26,Florida,NHL,Tampa Bay Lightning,Tampa,Amalie Arena,27.9427,-82.4521
+27,Florida,NBA,Orlando Magic,Orlando,Amway Center,28.5392,-81.3836
+28,Florida,NHL,Florida Panthers,Sunrise,FLA Live Arena,26.1585,-80.3260
+29,Florida,NFL,Miami Dolphins,Miami Gardens,Hard Rock Stadium,25.9581,-80.2389
+30,Florida,NBA,Miami Heat,Miami,Kaseya Center,25.7814,-80.1883
+31,Florida,MLB,Miami Marlins,Miami,loanDepot Park,25.7781,-80.2197
+32,Florida,NFL,Tampa Bay Buccaneers,Tampa,Raymond James Stadium,27.9760,-82.5034
+33,Florida,NFL,Jacksonville Jaguars,Jacksonville,TIAA Bank Field,30.3239,-81.6375
+34,Florida,MLB,Tampa Bay Rays,St. Petersburg,Tropicana Field,27.7683,-82.6533
+35,Georgia,NFL,Atlanta Falcons,Atlanta,Mercedes-Benz Stadium,33.7576,-84.4010
+36,Georgia,NBA,Atlanta Hawks,Atlanta,State Farm Arena,33.7573,-84.3963
+37,Georgia,MLB,Atlanta Braves,Cumberland,Truist Park,33.7353,-84.3894
+38,Illinois,MLB,Chicago White Sox,Chicago,Guaranteed Rate Field,41.8300,-87.6339
+39,Illinois,NFL,Chicago Bears,Chicago,Soldier Field,41.8623,-87.6167
+40,Illinois,NHL,Chicago Blackhawks,Chicago,United Center,41.8807,-87.6744
+41,Illinois,NBA,Chicago Bulls,Chicago,United Center,41.8807,-87.6744
+42,Illinois,MLB,Chicago Cubs,Chicago,Wrigley Field,41.9483,-87.6556
+43,Indiana,NBA,Indiana Pacers,Indianapolis,Gainbridge Fieldhouse,39.7639,-86.1558
+44,Indiana,NFL,Indianapolis Colts,Indianapolis,Lucas Oil Stadium,39.7601,-86.1638
+45,Louisiana,NFL,New Orleans Saints,New Orleans,Caesars Superdome,29.9508,-90.0811
+46,Louisiana,NBA,New Orleans Pelicans,New Orleans,Smoothie King Center,29.9490,90.0823
+47,Maryland,NFL,Washington Commanders,Landover,FedExField,38.9078,-76.8644
+48,Maryland,NFL,Baltimore Ravens,Baltimore,M&T Bank Stadium,39.2780,-76.6228
+49,Maryland,MLB,Baltimore Orioles,Baltimore,Oriole Park at Camden Yards,39.2839,-76.6217
+50,Massachusetts,MLB,Boston Red Sox,Boston,Fenway Park,42.3464,-71.0975
+51,Massachusetts,NFL,New England Patriots,Foxborough,Gillette Stadium,42.0909,-71.2643
+52,Massachusetts,NHL,Boston Bruins,Boston,TD Garden,42.3663, -71.0626
+53,Massachusetts,NBA,Boston Celtics,Boston,TD Garden,42.3663, -71.0626
+54,Michigan,MLB,Detroit Tigers,Detroit,Comerica Park,42.3392,-83.0486
+55,Michigan,NFL,Detroit Lions,Detroit,Ford Field,42.3400,-83.0456
+56,Michigan,NHL,Detroit Red Wings,Detroit,Little Caesars Arena,42.3411,-83.0553
+57,Michigan,NBA,Detroit Pistons,Detroit,Little Caesars Arena,42.3411,-83.0553
+58,Minnesota,NBA,Minnesota Timberwolves,Minneapolis,Target Center,44.9796,-93.2766
+59,Minnesota,MLB,Minnesota Twins,Minneapolis,Target Field,44.9817,-93.2783
+60,Minnesota,NFL,Minnesota Vikings,Minneapolis,U.S. Bank Stadium,44.9739,-93.2581
+61,Minnesota,NHL,Minnesota Wild,St. Paul,Xcel Energy Center,44.9402, -93.1007
+62,Missouri,NFL,Kansas City Chiefs,Kansas City,Arrowhead Stadium,39.0489,-94.4839
+63,Missouri,MLB,St. Louis Cardinals,St. Louis,Busch Stadium,38.6225,-90.1931
+64,Missouri,NHL,St. Louis Blues,St. Louis,Enterprise Center,38.6270,-90.2032
+65,Missouri,MLB,Kansas City Royals,Kansas City,Kauffman Stadium,39.0514,-94.4806
+66,Nevada,NFL,Las Vegas Raiders,Paradise,Allegiant Stadium,36.0906,-115.1839
+67,Nevada,NHL,Vegas Golden Knights,Paradise,T-Mobile Arena,36.1030, -115.1787
+68,New Jersey,NFL,New York Giants,East Rutherford,MetLife Stadium,40.8122,-74.0770
+69,New Jersey,NFL,New York Jets,East Rutherford,MetLife Stadium,40.8122,-74.0770
+70,New Jersey,NHL,New Jersey Devils,Newark,Prudential Center,40.7335,-74.1693
+71,New York,NBA,Brooklyn Nets,New York City,Barclays Center,40.6827,-73.9759
+72,New York,MLB,New York Mets,New York City,Citi Field,40.7569,-73.8458
+73,New York,NFL,Buffalo Bills,Orchard Park,Highmark Stadium,42.7737,-78.7870
+74,New York,NHL,Buffalo Sabres,Buffalo,KeyBank Center,42.8751,-78.8768
+75,New York,NBA,New York Knicks,New York City,Madison Square Garden,40.7503,-73.9933
+76,New York,NHL,New York Rangers,New York City,Madison Square Garden,40.7503,-73.9933
+77,New York,NHL,New York Islanders,Elmont,UBS Arena,40.7118,-73.7260
+78,New York,MLB,New York Yankees,New York City,Yankee Stadium,40.8292,-73.9264
+79,North Carolina,NFL,Carolina Panthers,Charlotte,Bank of America Stadium,35.2258,-80.8528
+80,North Carolina,NHL,Carolina Hurricanes,Raleigh,PNC Arena,35.8020,-78.7198
+81,North Carolina,NBA,Charlotte Hornets,Charlotte,Spectrum Center,35.2252,-80.8393
+82,Ohio,NFL,Cleveland Browns,Cleveland,FirstEnergy Stadium,41.5061,-81.6994
+83,Ohio,MLB,Cincinnati Reds,Cincinnati,Great American Ball Park,39.0975,-84.5067
+84,Ohio,NHL,Columbus Blue Jackets,Columbus,Nationwide Arena,39.9682,-83.0037
+85,Ohio,NFL,Cincinnati Bengals,Cincinnati,Paycor Stadium,39.0954,-84.5160
+86,Ohio,MLB,Cleveland Guardians,Cleveland,Progressive Field,41.4958,-81.6853
+87,Ohio,NBA,Cleveland Cavaliers,Cleveland,Rocket Mortgage FieldHouse,41.4966, -81.6884
+88,Oklahoma,NBA,Oklahoma City Thunder,Oklahoma City,Paycom Center,35.4636,-97.5156
+89,Oregon,NBA,Portland Trail Blazers,Portland,Moda Center,45.5316,-122.6672
+90,Pennsylvania,NFL,Pittsburgh Steelers,Pittsburgh,Acrisure Stadium,40.4467,-80.0158
+91,Pennsylvania,MLB,Philadelphia Phillies,Philadelphia,Citizens Bank Park,39.9058,-75.1664
+92,Pennsylvania,NFL,Philadelphia Eagles,Philadelphia,Lincoln Financial Field,39.9008,-75.1675
+93,Pennsylvania,MLB,Pittsburgh Pirates,Pittsburgh,PNC Park,40.4469,-80.0058
+94,Pennsylvania,NHL,Pittsburgh Penguins,Pittsburgh,PPG Paints Arena,40.4394,-79.9899
+95,Pennsylvania,NHL,Philadelphia Flyers,Philadelphia,Wells Fargo Center, 39.9013,-75.1726
+96,Pennsylvania,NBA,Philadelphia 76ers,Philadelphia,Wells Fargo Center, 39.9013,-75.1726
+97,Tennessee,NHL,Nashville Predators,Nashville,Bridgestone Arena,36.1592,-86.7791
+98,Tennessee,NBA,Memphis Grizzlies,Memphis,FedExForum,35.1384,-90.0510
+99,Tennessee,NFL,Tennessee Titans,Nashville,Nissan Stadium,36.1665,-86.7713
+100,Texas,NBA,Dallas Mavericks,Dallas,American Airlines Center,32.7906,-96.8103
+101,Texas,NHL,Dallas Stars,Dallas,American Airlines Center,32.7906,-96.8103
+102,Texas,NBA,San Antonio Spurs,San Antonio,AT&T Center,29.4269,-98.4376
+103,Texas,NFL,Dallas Cowboys,Arlington,AT&T Stadium,32.7478,-97.0928
+104,Texas,MLB,Texas Rangers,Arlington,Globe Life Field,32.7514,-97.0828
+105,Texas,MLB,Houston Astros,Houston,Minute Maid Park,29.7569,-95.3556
+106,Texas,NFL,Houston Texans,Houston,NRG Stadium,29.6848,-95.4110
+107,Texas,NBA,Houston Rockets,Houston,Toyota Center,29.7505,-95.3573
+108,Utah,NBA,Utah Jazz,Salt Lake City,Vivint Arena,40.7684,-111.9016
+109,Washington,NHL,Seattle Kraken,Seattle,Climate Pledge Arena,47.6220,-122.3540
+110,Washington,NFL,Seattle Seahawks,Seattle,Lumen Field,47.5952,-122.3316
+111,Washington,MLB,Seattle Mariners,Seattle,T-Mobile Park,47.5914,-122.3325
+112,Wisconsin,MLB,Milwaukee Brewers,Milwaukee,American Family Field,43.0283,-87.9711
+113,Wisconsin,NBA,Milwaukee Bucks,Milwaukee,Fiserv Forum,43.0452,-87.9179
+114,Wisconsin,NFL,Green Bay Packers,Green Bay,Lambeau Field,44.5014,-88.0622

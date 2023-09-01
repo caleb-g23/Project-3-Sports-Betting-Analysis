@@ -6,10 +6,14 @@ const jsonFiles = [
     { name: "State Total Data", url: "../json/stateboundry_betting_info_added.json" }
 ];
 
-// Create a dropdown for selecting JSON files
-const dropdown = d3.select("#selJson");
+// Create a dropdown for selecting feature.properties.date_legalized from stateboundry_betting_info_added.json 
+
+// Select the dropdown element in the HTML page
+const dropdown = d3.select("#selDataset");
+
+// Add the options to the dropdown list
 jsonFiles.forEach(function (jsonFile) {
-    dropdown.append("option").text(jsonFile.name).attr("value", jsonFile.url);
+    dropdown.append("option").text(jsonFile.name).property("value", jsonFile.url);
 });
 
 // Initialize Leaflet map
@@ -18,7 +22,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-//______________________________________VICKY___________________
+//______________________________________VICKY_____MAP__________
 
 //use json with state boundries from  https://eric.clst.org/tech/usgeojson/
 
@@ -26,27 +30,31 @@ let link = "../json/stateboundry_betting_info_added.json";
 
 // The function that will determine the color of a state based on its Ways_to_bet
 function chooseColor(Ways_to_bet) {
-    if (Ways_to_bet == "Online & In-Person") return "green";
-    else if (Ways_to_bet == "In Person Only") return "purple";
-    else if (Ways_to_bet == "Online Only") return "purple";
-    else if (Ways_to_bet == "Pending") return "yellow";
-    return "grey";
+    if (Ways_to_bet == "Online & In-Person") return "#0570E5"; // Dark Blue
+    else if (Ways_to_bet == "In Person Only") return "#001F3F"; // Navy Blue
+    else if (Ways_to_bet == "Online Only") return "#3498DB"; // Light Blue
+    else if (Ways_to_bet == "Pending") return "#F39C12"; // Yellow
+    return "#BDC3C7"; // Grey
 }
 
 // Fetch the GeoJSON data and add it to the map with custom colors
 fetch(link)
     .then(response => response.json())
     .then(data => {
-        L.geoJSON(data, {
+        const geoJsonLayer = L.geoJSON(data, {
             style: function (feature) {
                 return {
                     fillColor: chooseColor(feature.properties.Ways_to_bet),
                     weight: 2,
                     opacity: 1,
                     color: 'white',
-                    fillOpacity: 0.7
+                    fillOpacity: 0.5
                 };
-            }, 
+            },
+            filter: function (feature) {
+                const selectedYear = parseInt(document.getElementById('yearSelect').value);
+                return selectedYear === 0 || feature.properties.year_legalized == selectedYear;
+            },
             onEachFeature: function (feature, layer) {
                 layer.on({
                     mouseover: function (event) {
@@ -65,87 +73,70 @@ fetch(link)
                         map.fitBounds(event.target.getBounds());
                     }
                 });
-                // set popup showing state name and Ways_to_bet 'tax_status'
-                layer.bindPopup("<h3>" + feature.properties.NAME + "</h3><h4>" + feature.properties.Ways_to_bet + "</h4>");
+                // set popup showing state name and Ways_to_bet and legalized date: 
+                layer.bindPopup("<h1>" + feature.properties.NAME + "</h1> <hr> <h2>Ways to bet: " + feature.properties.Ways_to_bet + "</h2> <hr> <h2>Legalized in: " + feature.properties.date_legalized + "</h2>");
             }
-
-
         }).addTo(map);
+        document.getElementById('yearSelect').addEventListener('change', function () {
+            geoJsonLayer.clearLayers();
+            geoJsonLayer.addData(data);
+        });
     });
 
+//____________________Graps_____VICKY__________________________________________________
 
+// fetch data from json "../json/national_market.json" and prepare a line graph with sum of revenue for each year
+d3.json("../json/national_market.json").then(function(data) {
+    console.log(data);
 
+    // Convert object to an array of values
+    var dataArray = Object.values(data);
 
+    // Prepare data for summing revenue and taxes by year
+    var revenueByYear = {};
+    var taxesByYear = {};
 
+    // Loop through the data and sum revenue and taxes by year
+    dataArray.forEach(function(d) {
+        var year = new Date(d.month).getFullYear();
+        var revenue = parseFloat(d.revenue.replace(/[\$,]/g, '')); // Convert revenue to a number
+        var taxes = parseFloat(d.taxes.replace(/[\$,]/g, '')); // Convert taxes to a number
+        if (!revenueByYear[year]) {
+            revenueByYear[year] = revenue;
+            taxesByYear[year] = taxes;
+        } else {
+            revenueByYear[year] += revenue;
+            taxesByYear[year] += taxes;
+        }
+    });
 
+    // Extract years, revenue, and taxes for plotting
+    var years = Object.keys(revenueByYear);
+    var revenue = Object.values(revenueByYear);
+    var taxes = Object.values(taxesByYear);
 
+    // Create line graphs for revenue and taxes
+    var trace1 = {
+        x: years,
+        y: revenue,
+        mode: "lines",
+        name: "Total Revenue"
+    };
 
+    var trace2 = {
+        x: years,
+        y: taxes,
+        mode: "lines",
+        name: "Taxes"
+    };
 
+    var data = [trace1, trace2];
+    var layout = {
+        title: "Total Revenue and Taxes from Sports Betting in the United States by Year",
+        xaxis: { title: "Year" },
+        yaxis: { title: "Amount (in millions)" },
+        legend: { x: 0, y: 1 }
+    };
 
-
-
-
-//______________________________________VICKY________________________________________________________________________________________
-
-// Function to fetch and display data for the selected JSON file
-function fetchAndDisplayData(jsonUrl) {
-    // Fetch JSON data
-    fetch(jsonUrl)
-        .then(response => response.json())
-        .then(data => {
-            // Clear existing markers on the map
-            map.eachLayer(function (layer) {
-                if (layer instanceof L.Marker) {
-                    map.removeLayer(layer);
-                }
-            });
-
-            // Add markers to the map based on data (example)
-            if (data.markers) {
-                data.markers.forEach(function (markerData) {
-                    L.marker([markerData.lat, markerData.lon]).addTo(map);
-                });
-            }
-
-            // Display charts based on data using Chart.js
-            if (data.barChart) {
-                displayBarChart(data.barChart.sampleValues, data.barChart.otuIds, data.barChart.otuLabels);
-            }
-            if (data.bubbleChart) {
-                displayBubbleChart(data.bubbleChart.sampleValues, data.bubbleChart.otuIds, data.bubbleChart.otuLabels);
-            }
-            if (data.gaugeChart) {
-                displayGaugeChart(data.gaugeChart.washFreq);
-            }
-
-        })
-        .catch(error => console.error("Error fetching JSON data:", error));
-}
-
-// Function to display bar chart based on data using Chart.js
-function displayBarChart(sampleValues, otuIds, otuLabels) {
-    // Chart.js bar chart code here
-}
-
-// Function to display bubble chart based on data using Chart.js
-function displayBubbleChart(sampleValues, otuIds, otuLabels) {
-    // Chart.js bubble chart code here
-}
-
-// Function to display gauge chart based on data using Chart.js
-function displayGaugeChart(washFreq) {
-    // Chart.js gauge chart code here
-}
-
-// Function to handle JSON file change
-function jsonChange() {
-    const selectedJsonUrl = dropdown.property("value");
-    fetchAndDisplayData(selectedJsonUrl);
-}
-
-// Set up event listener for JSON file changes
-dropdown.on("change", jsonChange);
-
-// Initialize page with data from the first JSON file
-const initialJsonUrl = jsonFiles[0].url;
-fetchAndDisplayData(initialJsonUrl);
+    Plotly.newPlot("line-graph", data, layout); // Make sure to target the correct element ID here
+});

@@ -1,0 +1,52 @@
+state,state_abbr,handle,revenue,hold,taxes,start_month,state_taxes_on_gambling,ways_to_bet
+Alaska,AK,,,,,,Yes,none
+Alabama,AL,,,,,,No,none
+Arkansas,AR,468640272,47042451,0.100380727,6864846,7/1/2019,Yes,Online & In-Person
+Arizona,AZ,10612786503,879035385,0.082827953,49876234,9/1/2021,Yes,Online & In-Person
+California,CA,,,,,,No,none
+Colorado,CO,12795525496,857637396,0.067026352,46490999,5/1/2020,Yes,Online & In-Person
+Connecticut,CT,2648034000,265472717,0.10025276,26696021,10/1/2021,Yes,Online & In-Person
+District of Columbia,DC,590587317,72470773,0.122709667,18262567,5/1/2020,Yes,In-Person Only
+Delaware,DE,565574879,111544003,0.197222343,65804250,6/1/2018,Yes,In-Person Only
+Florida,FL,,,,,,No,none
+Georgia,GA,,,,,,Yes,none
+Hawaii,HI,,,,,,No,none
+Iowa,IA,6285262130,438174752,0.069714634,29576937,8/1/2019,Yes,Online & In-Person
+Idaho,ID,,,,,,Yes,none
+Illinois,IL,24059865703,1962146677,0.081552686,312219908,3/1/2020,Yes,Online & In-Person
+Indiana,IN,12751685027,1085683300,0.085140379,103236082,9/1/2019,Yes,Online & In-Person
+Kansas,KS,1676590465,149123675,0.088944604,5820203,9/1/2022,Yes,Online & In-Person
+Kentucky,KY,,,,,,Yes,Pending Both
+Louisiana,LA,3664111977,384344028,0.104894182,52909783,11/1/2021,Yes,Online & In-Person
+Massachusetts,MA,1969372826,205122869,0.104156443,39904617,1/1/2023,Yes,Online & In-Person
+Maryland,MD,3313550992,433593391,0.1308546,31454432,12/1/2021,Yes,Online & In-Person
+Maine,ME,,,,,,Yes,Pending Both
+Michigan,MI,11059891204,949712975,0.085870011,48085895,3/1/2020,Yes,Online & In-Person
+Minnesota,MN,,,,,,Yes,none
+Missouri,MO,,,,,,Yes,none
+Mississippi,MS,2231888215,252567131,0.113162984,30308060,8/1/2018,Yes,In-Person Only
+Montana,MT,149796136,20555840,0.137225436,3345736,3/1/2020,Yes,In-Person Only
+North Carolina,NC,,,,,8/1/2023,Yes,In-Person Only
+North Dakota,ND,,,,,,No,In-Person Only
+Nebraska,NE,,,,,,No,Pending In-Person
+New Hampshire,NH,2332620247,176569358,0.075695715,80991042,12/1/2019,Yes,Online & In-Person
+New Jersey,NJ,38874252674,2810406278,0.072294799,389084890,6/1/2018,Yes,Online & In-Person
+New Mexico,NM,,,,,,Yes,In-Person Only
+Nevada,NV,33520083581,1885621000,0.05625347,127279433,6/1/2018,Yes,Online & In-Person
+New York,NY,25545018524,2231885589,0.087370678,1116577862,7/1/2019,Yes,Online & In-Person
+Ohio,OH,3824758134,541598207,0.141603256,54280486,1/1/2023,Yes,Online & In-Person
+Oklahoma,OK,,,,,,Yes,none
+Oregon,OR,1254314057,120810711,0.096316158,60405367,10/1/2019,Yes,Online & In-Person
+Pennsylvania,PA,22428431602,1816885232,0.081008127,450711089,11/1/2018,Yes,Online & In-Person
+Rhode Island,RI,1707470362,152391731,0.089250001,77719780,11/1/2018,Yes,Online & In-Person
+South Carolina,SC,,,,,,Yes,none
+South Dakota,SD,13834303,1704950,0.123240759,153445,9/1/2021,No,In-Person Only
+Tennessee,TN,9066781322,886312510,0.09775382,157367429,11/1/2020,No,Online Only
+Texas,TX,,,,,,No,none
+Utah,UT,,,,,,No,none
+Virginia,VA,10748305916,1037483246,0.096525281,106594917,1/1/2021,Yes,Online & In-Person
+Vermont,VT,,,,,,Yes,Pending Online
+Washington,WA,,,,,,No,In-Person Only
+Wisconsin,WI,,,,,,Yes,In-Person Only
+West Virginia,WV,2029410102,169520828,0.083532071,16953995,8/1/2018,Yes,Online & In-Person
+Wyoming,WY,260463925,26680402,0.102434155,1436140,9/1/2021,No,Online Only
