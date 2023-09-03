@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+​
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,7 +68,7 @@
         </div>
         <div class="grid-item bottom-right">
           <!-- Pie Chart -->
-          <div id="pie-chart"style="width: 100%; height: 500px;"></div>
+          <div id="pie-chart" style="width: 100%; height: 400px;"></div>
           <!-- You can embed your pie chart component here -->
         </div>
       </div>
@@ -83,15 +83,23 @@
         
         <div class="grid-container">
           <div class="grid-item top-left">
-            <!-- Map with Legend -->
+            <!-- OVerview of stateinfo -->
             <!-- You can embed your map component here -->
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">State Sports Betting Totals</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body"></div>
+            </div>
           </div>
-          <div class="grid-item top-right">
-            <!-- Line Chart -->
-            <!-- You can embed your line chart component here -->
-          </div>
+            <div class="grid-item top-right">
+
+              <!-- Line Chart -->
+              <div id="Monthly_line" style="width: 100%; height: 400px;"></div>
+            </div>
           <div class="grid-item bottom-left">
             <!-- Bar Graph -->
+            <canvas id="revenueTaxesChart"></canvas>
             <!-- You can embed your bar graph component here -->
           </div>
           <div class="grid-item bottom-right">
@@ -101,7 +109,7 @@
         </div>
       </div>
     </div>
-
+​
     <script>
       // JavaScript logic - switching between pages and initializing page content
   
@@ -145,11 +153,11 @@
       // Only show the national page on initialization
       showNationalPage();
   </script>
-
-
+​
+​
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="../JavaScript/logic.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" defer></script>
+    <script src="../JavaScript/logic.js" type="module" defer></script>
 </body>
-
+​
 </html>
