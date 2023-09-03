@@ -328,6 +328,17 @@ stateDropdown.addEventListener("change", (event) => {
   const selectedData = data.filter((state) => state.state === selectedState)[0];
   updateChart(selectedData);
   buildStateInfo(selectedData);
+  if (selectedData) {
+    stateDataContainer.innerHTML = `
+        <p>State: ${selectedData.state}</p>
+        <p>Handle: ${selectedData.handle}</p>
+        <p>Revenue: ${selectedData.revenue}</p>
+        <p>Hold: ${selectedData.hold}</p>
+        <p>Taxes: ${selectedData.taxes}</p>
+        <p>Population 18+: ${selectedData['population total 18+']}</p>
+        <p>Revenue Per Person: ${selectedData['Revenue Per Person']}</p>
+    `;
+  }
 });
 
 // Populate the select options with states
@@ -376,7 +387,17 @@ function buildStateInfo(name) {
 }
 // initialize state data
 buildStateInfo(data[0].state)
-
+if (data[0]) {
+  stateDataContainer.innerHTML = `
+      <p>State: ${data[0].state}</p>
+      <p>Handle: ${data[0].handle}</p>
+      <p>Revenue: ${data[0].revenue}</p>
+      <p>Hold: ${data[0].hold}</p>
+      <p>Taxes: ${data[0].taxes}</p>
+      <p>Population 18+: ${data[0]['population total 18+']}</p>
+      <p>Revenue Per Person: ${data[0]['Revenue Per Person']}</p>
+  `;
+}
 // Function to update the chart based on selected data
 function updateChart(data) {
   if (revenueChart) revenueChart.destroy();
