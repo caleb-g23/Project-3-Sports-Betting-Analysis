@@ -136,7 +136,7 @@ d3.json("../json/stateboundry_betting_info_added.json").then(function (data) {
       var yearLegalized = parseInt(feature.properties.date_legalized.slice(-4));
       if (!yearLegalized) yearLegalized = 0;
       if (selectedYear === 0 || yearLegalized === selectedYear) {
-        var tax = feature.properties.tax_status.tax_status;
+        var tax = feature.properties.tax_status;
         if (tax === "Yes") {
           taxStatusCounts["YES"] += 1;
         } else if (tax === "No") {
